@@ -53,6 +53,8 @@
  	Logs - empty directory where output logs go. Each of the data transformation steps (NGA,USGS and AdHoc) will create logs for any duplicate and error(malformed/invalid) records found.
 	
 	Resources - data used in the cleaning, transformation and statistical estimation processes
+		Generated data files - official country names and feature metadata (*.csv files) are dumps of sheets in Universal Gazeteer Model; 
+                They are used in applications and libraries but they reside here
  
 		
 		

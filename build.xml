@@ -35,7 +35,7 @@
         <!-- Important:  Country Code by default is 'cc', it was ISO_cc 
              Note:       TODO: source can be inferred from place_id; evaluate if ADM1, AMD2 can go w/out country prefix in index; if Place ID can go w/out source prefix
          -->
-	<property name="fieldnames" value="id,place_id,name,lat,lon,feat_class,feat_code,FIPS_cc,cc,ISO3_cc,adm1,adm2,adm3,,,source,,,,,name_bias,id_bias,name_type," />
+	<property name="fieldnames" value="id,place_id,name,lat,lon,feat_class,feat_code,FIPS_cc,cc,ISO3_cc,adm1,adm2,adm3,,,source,,,,,name_bias,id_bias,name_type,,SplitCategory" />
 
 	<property name="kitchen.script.win" location="${kettle.home}/kitchen.bat" />
 	<property name="kitchen.script.unix" location="${kettle.home}/kitchen.sh" />
@@ -171,11 +171,13 @@
                 </copy>
 	</target>
 
+        <!-- Create the solr index, by loading the Merged.txt (CSV file) -->
 	<target name="create">
 		<java classname="org.opensextant.solrtexttagger.EmbeddedSolrUpdater" classpathref="runtime.classpath" fork="yes" dir="${exec_dir}">
 			<jvmarg value="-Xmx2G" />
                         <!-- This MaxPermSize appears to be helpful for loading numerous JARs -->
 			<jvmarg value="-XX:MaxPermSize=256m" />
+                        <!-- OpenSextant Home is set here as libs used in Solr schema are pulled from there -->
 			<jvmarg value="-Dopensextant.home=${opensextant.home}" />
 			<jvmarg value="-Dsolr.solr.home=${solr.home}" />
 			<arg value="--input=${csv}" />
@@ -183,12 +185,14 @@
 		</java>
 	</target>
 
-	<!-- 2 GB to build current gazetteer with 13 million rows -->
+        <!-- After Solr index is created or modified always re-build the FST;
+	     2 GB to build current gazetteer with 13 million rows -->
 	<target name="build-fst">
 		<java classname="org.opensextant.solrtexttagger.EmbeddedSolrUpdater" classpathref="runtime.classpath" fork="yes" dir="${exec_dir}">
 			<jvmarg value="-Xmx2G" />
                         <!-- This MaxPermSize appears to be helpful for loading numerous JARs -->
 			<jvmarg value="-XX:MaxPermSize=256m" />
+                        <!-- OpenSextant Home is set here as libs used in Solr schema are pulled from there -->
 			<jvmarg value="-Dopensextant.home=${opensextant.home}" />
 			<jvmarg value="-Dsolr.solr.home=${solr.home}" />
 			<arg value="/tag?build=true" />
