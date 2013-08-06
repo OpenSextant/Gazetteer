@@ -116,7 +116,7 @@ look at case,vocabulary and suffix</note>
     </notepad>
   </notepads>
   <order>
-  <hop> <from>Tokenize BaseName</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Build Sequences</from><to>Discard internal records</to><enabled>Y</enabled> </hop>  <hop> <from>WordStat Input</from><to>Process Case Info</to><enabled>Y</enabled> </hop>  <hop> <from>Process Case Info</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Vocab Input</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>PriorWeightsFromMining</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>Discard internal records</from><to>CreateNamePattern</to><enabled>Y</enabled> </hop>  <hop> <from>PatternWeights Input</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>CreateNamePattern</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>MinedWeightLookup</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>Clean gazetteers In</from><to>RecordID Sequence</to><enabled>Y</enabled> </hop>  <hop> <from>RecordID Sequence</from><to>Create base Name</to><enabled>Y</enabled> </hop>  <hop> <from>Estimate PLACE_NAME_BIAS</from><to>Merged and Biased out FULL</to><enabled>Y</enabled> </hop>  <hop> <from>Suffix Input</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>  <hop> <from>Vocab Lookup</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>  <hop> <from>EstimateFromSuffix</from><to>Build Sequences</to><enabled>Y</enabled> </hop>  <hop> <from>Country Weight input</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>  <hop> <from>FeatureType Weight Input</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>  <hop> <from>ID Bias from Feature Type</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>  <hop> <from>ID Bias from well known</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>  <hop> <from>ID Biase from Country</from><to>Calculate Total ID bias</to><enabled>Y</enabled> </hop>  <hop> <from>Is well known</from><to>ID Bias from well known</to><enabled>Y</enabled> </hop>  <hop> <from>Well Known Places Weight input</from><to>Is well known</to><enabled>Y</enabled> </hop>  <hop> <from>Create base Name</from><to>Is well known</to><enabled>Y</enabled> </hop>  <hop> <from>Calculate Total ID bias</from><to>Tokenize BaseName</to><enabled>Y</enabled> </hop>  <hop> <from>PatternWeightLookup</from><to>Adjustments</to><enabled>Y</enabled> </hop>  <hop> <from>Case Stats Lookup</from><to>Adjust for unseen&#47;common tokens</to><enabled>Y</enabled> </hop>  <hop> <from>Adjust for unseen&#47;common tokens</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Adjustments</from><to>Set filecategory</to><enabled>Y</enabled> </hop>  <hop> <from>Set filecategory</from><to>Estimate PLACE_NAME_BIAS</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Tokenize BaseName</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Build Sequences</from><to>Discard internal records</to><enabled>Y</enabled> </hop>  <hop> <from>WordStat Input</from><to>Process Case Info</to><enabled>Y</enabled> </hop>  <hop> <from>Process Case Info</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Vocab Input</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>PriorWeightsFromMining</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>Discard internal records</from><to>CreateNamePattern</to><enabled>Y</enabled> </hop>  <hop> <from>PatternWeights Input</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>CreateNamePattern</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>MinedWeightLookup</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>Clean gazetteers In</from><to>RecordID Sequence</to><enabled>Y</enabled> </hop>  <hop> <from>RecordID Sequence</from><to>Create base Name</to><enabled>Y</enabled> </hop>  <hop> <from>Estimate PLACE_NAME_BIAS</from><to>Merged and Biased out</to><enabled>Y</enabled> </hop>  <hop> <from>Suffix Input</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>  <hop> <from>Vocab Lookup</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>  <hop> <from>EstimateFromSuffix</from><to>Build Sequences</to><enabled>Y</enabled> </hop>  <hop> <from>Country Weight input</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>  <hop> <from>FeatureType Weight Input</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>  <hop> <from>ID Bias from Feature Type</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>  <hop> <from>ID Bias from well known</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>  <hop> <from>ID Biase from Country</from><to>Calculate Total ID bias</to><enabled>Y</enabled> </hop>  <hop> <from>Is well known</from><to>ID Bias from well known</to><enabled>Y</enabled> </hop>  <hop> <from>Well Known Places Weight input</from><to>Is well known</to><enabled>Y</enabled> </hop>  <hop> <from>Create base Name</from><to>Is well known</to><enabled>Y</enabled> </hop>  <hop> <from>Calculate Total ID bias</from><to>Tokenize BaseName</to><enabled>Y</enabled> </hop>  <hop> <from>PatternWeightLookup</from><to>Adjustments</to><enabled>Y</enabled> </hop>  <hop> <from>Case Stats Lookup</from><to>Adjust for unseen&#47;common tokens</to><enabled>Y</enabled> </hop>  <hop> <from>Adjust for unseen&#47;common tokens</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Adjustments</from><to>Set filecategory</to><enabled>Y</enabled> </hop>  <hop> <from>Set filecategory</from><to>Estimate PLACE_NAME_BIAS</to><enabled>Y</enabled> </hop>  </order>
   <step>
     <name>Adjust for unseen&#47;common tokens</name>
     <type>UserDefinedJavaClass</type>
@@ -1148,7 +1148,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <class_name>Processor</class_name>
 
         <class_source><![CDATA[
-import org.mitre.opensextant.phonetic.Phoneticizer;
+import org.opensextant.phonetic.Phoneticizer;
 
 static double confThresh = 0.9;
 static Phoneticizer phoner = new Phoneticizer();
@@ -1951,7 +1951,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </step>
 
   <step>
-    <name>Merged and Biased out FULL</name>
+    <name>Merged and Biased out</name>
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1974,7 +1974,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\GeoData\Merged\Merged</name>
+      <name>${Internal.Transformation.Filename.Directory}\GeoData\Merged\MergedGazetteer</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>

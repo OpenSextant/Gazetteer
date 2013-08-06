@@ -704,8 +704,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 
 
 	// create the key by concating name,country_code,type, latitude and longitude
-	String keyString = name + "-" + cc +"-" + type +"-" + lat +"-" + lon;
-	//String keyString = baseName + "-" + cc +"-" + type +"-" + lat +"-" + lon;
+	//String keyString = name + "-" + cc +"-" + type +"-" + lat +"-" + lon;
+	String keyString = baseName + "-" + cc +"-" + type +"-" + lat +"-" + lon;
 
 	Long key = ((Integer)keyString.hashCode()).longValue();
 
@@ -760,7 +760,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <class_name>Processor</class_name>
 
         <class_source><![CDATA[
-import org.mitre.opensextant.phonetic.Phoneticizer;
+import org.opensextant.phonetic.Phoneticizer;
 
 static double confThresh = 0.9;
 static Phoneticizer phoner = new Phoneticizer();
@@ -2202,7 +2202,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <class_source><![CDATA[
 import java.util.Set;
 import java.util.HashSet;
-import org.mitre.opensextant.phonetic.PhoneticUtils;
+import org.opensextant.phonetic.PhoneticUtils;
 public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException
 {
 		Object[] r = getRow();
