@@ -4,8 +4,11 @@
 
 	<!-- import properties -->
      <property file="${basedir}/build.properties" />
+	<!--set the time stamps -->
+	<tstamp />
 	
-	<property name="version" value="2.0-${DSTAMP}"/>
+	<property name="outputDir" location="${basedir}/GazetteerETL/GeoData/Merged" />
+
 	
 	<!-- the Kettle launcher scripts for win and linux -->
 	<property name="kitchen.script.win" location="${kettle.home}/kitchen.bat" />
@@ -122,6 +125,22 @@
 			<arg value="${processGazetteer.script}" />
 		</exec>
         </target>
+
+
+	<!-- zip and post the generated gazetteer data -->
+	<target name="post">
+		<!-- zip up the finished gazetteer datat -->
+		<zip destfile="${outputDir}/gazdata-${DSTAMP}.zip">
+			<fileset file="${outputDir}/MergedGazetteer.txt" />
+			
+		</zip>
+
+		<ftp server="${post.site}" remotedir="${post.dir}" userid="${post.user}" password="${post.password}">
+			<fileset file="${outputDir}/gazdata-${DSTAMP}.zip" />
+		</ftp>
+
+	</target>
+
 
 
 </project>
