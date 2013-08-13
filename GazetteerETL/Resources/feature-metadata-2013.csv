@@ -545,6 +545,7 @@ RSD,railroad siding,a short track parallel to and joining the main track,S
 RSGNL,railroad signal,a signal at the entrance of a particular section of track governing the movement of trains,S
 RSRT,resort,"a specialized facility for vacation, health, or participation sports activities",S
 RSTN,railroad station,"a facility comprising ticket office, platforms, etc. for loading and unloading train passengers and freight",S
+RSTNH,historical railroad station,"a former facility comprising ticket office, platforms, etc. for loading and unloading train passengers and freight",S
 RSTNQ,abandoned railroad station,,S
 RSTP,railroad stop,a place lacking station facilities where trains stop to pick up and unload passengers and freight,S
 RSTPQ,abandoned railroad stop,,S

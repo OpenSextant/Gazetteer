@@ -8,7 +8,7 @@
 	<tstamp />
 	
 	<property name="outputDir" location="${basedir}/GazetteerETL/GeoData/Merged" />
-
+	<property name="resourceDir" location="${basedir}/GazetteerETL/Resources" />
 	
 	<!-- the Kettle launcher scripts for win and linux -->
 	<property name="kitchen.script.win" location="${kettle.home}/kitchen.bat" />
@@ -132,7 +132,8 @@
 		<!-- zip up the finished gazetteer datat -->
 		<zip destfile="${outputDir}/gazdata-${DSTAMP}.zip">
 			<fileset file="${outputDir}/MergedGazetteer.txt" />
-			
+			<fileset file="${resourceDir}/country-names-2013.csv" />
+			<fileset file="${resourceDir}/feature-metadata-2013.csv" />
 		</zip>
 
 		<ftp server="${post.site}" remotedir="${post.dir}" userid="${post.user}" password="${post.password}">
