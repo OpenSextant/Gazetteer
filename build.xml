@@ -55,6 +55,10 @@
         <copy todir="${kettle.home}/libext" file="${basedir}/GazetteerETL/lib/commons-codec.jar" />
     </target>
 
+	<target name="setProxy">
+	    <setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}" />
+	</target>
+	
 	<!-- Fetch original source gazetteers from their various websites, unzip and rename (removing date from file name) -->
 	<!-- NOTE: make sure proxies are set if needed-->
         <target name="data.nga">
@@ -88,7 +92,7 @@
 		<move file="${basedir}/GazetteerETL/GeoData/USGS/${USGS_basename_All}.txt" tofile="${basedir}/GazetteerETL/GeoData/USGS/AllNames.txt" />
         </target>
   
-	<target name="getOriginalSources" depends="data.nga,data.usgs">
+	<target name="getOriginalSources" depends="setProxy,data.nga,data.usgs">
                <echo > Finished Retrieving Data Sources</echo>
 	</target>
 

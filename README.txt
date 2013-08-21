@@ -18,7 +18,8 @@
  		
  	2) copy or rename build.local.properties to build.properties and edit:
  	 	a) set the "kettle.home" parameter to where you installed Kettle from step #1 above
- 		b) set the "NGA_date" and "USGS_date" parameters (see build.properties for details)
+ 	 	b) set the proxy.host and proxy.port parameters if you are behind a firewall
+ 		c) set the "NGA_date" and "USGS_date" parameters (see build.properties for details)
  		
  	3) do the build: ant
  	

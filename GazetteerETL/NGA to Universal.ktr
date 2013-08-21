@@ -1080,7 +1080,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         </field>
     </fields><clear_result_fields>N</clear_result_fields>
 <info_steps></info_steps><target_steps></target_steps><usage_parameters><usage_parameter><parameter_tag>phoneticAlgorithm</parameter_tag>
-<parameter_value>Simple_Phonetic0</parameter_value>
+<parameter_value>Simple_Phonetic0SolrPlus</parameter_value>
 <parameter_description>The algorithm used to produce the reduced form of the names for matching purposes</parameter_description>
 </usage_parameter></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
