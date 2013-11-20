@@ -1,7 +1,7 @@
  
- 	How to use Kettle to process and populate the OpenSextant Gazetteer
+ 	How to use Kettle to create the OpenSextant Gazetteer
  	
- 	OpenSextant use the Kettle application (officially called "Pentaho Data Integration Community Edition" ) to process and transform
+ 	OpenSextant use the Kettle ETL software  (officially called "Pentaho Data Integration Community Edition" ) to process and transform
  	the publicly available gazetteer data into a clean consistent form suitable to be ingested into a Solr repository and used by the OpenSextant geotagger.
  	
  	Here's how to do that: 
@@ -9,7 +9,7 @@
  	1) Get and install Kettle
  		 Get it from http://kettle.pentaho.com/
  		 Download and unzip anywhere handy.
- 		(Developed/tested with version "4.2.0-stable")
+ 		(Developed/tested with version "4.4.0-stable")
  	 You may want to give Kettle some more memory. To do so, edit <KETTLE_HOME>/Spoon.bat (or spoon.sh, whichever you intend to use) to increase the Java heap space
  			In either file, change 
  				PENTAHO_DI_JAVA_OPTIONS="-Xmx512m"

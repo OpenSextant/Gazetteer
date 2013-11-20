@@ -133,7 +133,7 @@
 
 	<!-- zip and post the generated gazetteer data -->
 	<target name="post">
-		<!-- zip up the finished gazetteer datat -->
+		<!-- zip up the finished gazetteer data -->
 		<zip destfile="${outputDir}/gazdata-${DSTAMP}.zip">
 			<fileset file="${outputDir}/MergedGazetteer.txt" />
 			<fileset file="${resourceDir}/country-names-2013.csv" />

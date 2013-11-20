@@ -791,8 +791,6 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
  		base = name.toLowerCase();
 	}
 
-	// temp hack (add these to Phoneticizer ?)
-	base = base.replaceAll("Ã¸","o").replaceAll("Ã�".toLowerCase(),"d").replaceAll("ÃŸ","ss");
 
 	// prepare base name for tokenization
 	base = base.replaceAll("[-\\s]+"," ");
