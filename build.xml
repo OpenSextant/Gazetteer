@@ -34,7 +34,7 @@
 
 	<!-- deletes generated gazetteer data and logs -->
 	<target name="clean">
-		<delete includeemptydirs="true">
+		<delete quiet="true" includeemptydirs="true">
 			<fileset dir="${basedir}/GazetteerETL/Logs" includes="**/*" />
 			<fileset dir="${basedir}/GazetteerETL/GeoData/Merged" includes="**/*" />
 		</delete>
