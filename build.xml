@@ -51,8 +51,8 @@
 	<!-- copies of required jars, included in lib dir -->
 	<!-- copy these to Kettle's libext dir -->
     <target name="copy-libs" >
-	    <copy todir="${kettle.home}/libext" file="${basedir}/GazetteerETL/lib/opensextant-phonetics.jar" />
-        <copy todir="${kettle.home}/libext" file="${basedir}/GazetteerETL/lib/commons-codec.jar" />
+	    <copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/opensextant-phonetics.jar" />
+        <copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/commons-codec.jar" />
     </target>
 
 	<target name="setProxy">
