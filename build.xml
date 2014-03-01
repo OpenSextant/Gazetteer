@@ -139,7 +139,7 @@
 	</target>
 
 	<!-- zip the generated gazetteer data -->
-	<target name="zip" depends = "">
+	<target name="zip" depends = "build">
 		<zip destfile="${build.dir}/opensextant-gazetteer.zip">
 			<fileset file="${outputDir}/MergedGazetteer.txt" />
 			<fileset file="${outputDir}/MergedGazetteer_SMALL.txt" />
