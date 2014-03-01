@@ -9,7 +9,9 @@
  	1) Get and install Kettle
  		 Get it from http://kettle.pentaho.com/
  		 Download and unzip anywhere handy.
- 		(Developed/tested with versions "4.4.0-stable" and "5.0.1.A-stable")
+ 		(Developed/tested with versions "4.4.0-stable" )
+ 		NOTE: Kettle  "5.0.1.A-stable" introduced an intermittent issue reading the Excel files used for reference data. Avoid for now.
+ 		 
  	 You may want to give Kettle some more memory. To do so, edit <KETTLE_HOME>/Spoon.bat (or spoon.sh, whichever you intend to use) to increase the Java heap space
  			In either file, change 
  				PENTAHO_DI_JAVA_OPTIONS="-Xmx512m"

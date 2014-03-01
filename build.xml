@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
 
-<project name="OpenSextant-Gazetteer" default="build">
+<project name="OpenSextant-Gazetteer" default="build" xmlns:ivy="antlib:org.apache.ivy.ant">
 
 	<!-- import properties -->
-     <property file="${basedir}/build.properties" />
+	<property file="${basedir}/build.properties" />
 	<!--set the time stamps -->
 	<tstamp />
+
+	<!-- directory to contain the created artifacts -->
+	<property name="build.dir" location="build" />
+	
+	<property name="version" value="2.1" />
 	
 	<property name="outputDir" location="${basedir}/GazetteerETL/GeoData/Merged" />
 	<property name="resourceDir" location="${basedir}/GazetteerETL/Resources" />
-	
+
 	<!-- the Kettle launcher scripts for win and linux -->
 	<property name="kitchen.script.win" location="${kettle.home}/kitchen.bat" />
 	<property name="kitchen.script.unix" location="${kettle.home}/kitchen.sh" />
@@ -17,19 +22,19 @@
 	<!-- the Kettle script which does all the work -->
 	<property name="processGazetteer.script" location="${basedir}/GazetteerETL/BuildMergedGazetteer.kjb" />
 
-    <!-- OS detection -  kettle scripts are tailored based on OS -->
-    <condition property="isWindows"  value="true" >
-        <os family="windows" />
-    </condition>
+	<!-- OS detection -  kettle scripts are tailored based on OS -->
+	<condition property="isWindows" value="true">
+		<os family="windows" />
+	</condition>
 
-    <condition property="isUnix"  value="true" >
-        <or>
-          <os family="mac" />
-          <os family="unix" />
-        </or>
-    </condition>
-	
-	
+	<condition property="isUnix" value="true">
+		<or>
+			<os family="mac" />
+			<os family="unix" />
+		</or>
+	</condition>
+
+
 	<!--====================== Targets ============================-->
 
 	<!-- deletes generated gazetteer data and logs -->
@@ -38,44 +43,47 @@
 			<fileset dir="${basedir}/GazetteerETL/Logs" includes="**/*" />
 			<fileset dir="${basedir}/GazetteerETL/GeoData/Merged" includes="**/*" />
 		</delete>
+		<delete dir="${build.dir}" />
+		<mkdir dir="${build.dir}" />
 	</target>
 
 	<!-- create the dir structure for the downloaded and generated data -->
-    <target name="prepare" >
-       <mkdir dir="${basedir}/GazetteerETL/Logs"/>
-       <mkdir dir="${basedir}/GazetteerETL/GeoData/NGA"/>
-       <mkdir dir="${basedir}/GazetteerETL/GeoData/USGS"/>
-       <mkdir dir="${basedir}/GazetteerETL/GeoData/Merged"/>
-    </target>
-	
-	<!-- copies of required jars, included in lib dir -->
-	<!-- copy these to Kettle's libext dir -->
-    <target name="copy-libs" >
-	    <copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/opensextant-phonetics.jar" />
-        <copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/commons-codec.jar" />
-    </target>
-
-	<target name="setProxy">
-	    <setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}" />
+	<target name="prepare">
+		<mkdir dir="${basedir}/GazetteerETL/Logs" />
+		<mkdir dir="${basedir}/GazetteerETL/GeoData/NGA" />
+		<mkdir dir="${basedir}/GazetteerETL/GeoData/USGS" />
+		<mkdir dir="${basedir}/GazetteerETL/GeoData/Merged" />
 	</target>
-	
+
+	<!-- copies of required jars, included in lib dir -->
+	<!-- copy these to Kettle's lib dir -->
+	<target name="copy-libs">
+		<copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/opensextant-phonetics.jar" />
+		<copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/commons-codec.jar" />
+	</target>
+
+	<!-- set the proxy needed to fetch the source gazetteer data -->
+	<target name="setProxy">
+		<setproxy proxyhost="${proxy.host}" proxyport="${proxy.port}" />
+	</target>
+
 	<!-- Fetch original source gazetteers from their various websites, unzip and rename (removing date from file name) -->
 	<!-- NOTE: make sure proxies are set if needed-->
-        <target name="data.nga">
-           <echo > Retrieving Data from NGA </echo>
-			<!--NGA world Gazetteer -->
-        	<!-- NGA changed file naming convention in 2013 -->
-			<!-- property name="NGA_basename_2012" value="geonames_dd_dms_date_${NGA_date}" /-->
-			<property name="NGA_basename" value="geonames_${NGA_date}" />
-        	<!-- alternate ftp path to the same data but way, way slower, Don't use unless desperate-->
-			<!--get src="ftp://ftp.nga.mil/pub2/gns_data/${NGA_basename}.zip" dest="${basedir}/GazetteerETL/GeoData/NGA" /--> 
-			<get src="http://earth-info.nga.mil/gns/html/${NGA_basename}.zip" dest="${basedir}/GazetteerETL/GeoData/NGA" />
-			<unzip src="${basedir}/GazetteerETL/GeoData/NGA/${NGA_basename}.zip" dest="${basedir}/GazetteerETL/GeoData/NGA" />
-			<move file="${basedir}/GazetteerETL/GeoData/NGA/${NGA_basename}.txt" tofile="${basedir}/GazetteerETL/GeoData/NGA/geonames_dd_dms_date.txt" />
-        </target>
-	
-        <target name="data.usgs">
-           <echo > Retrieving Data from USGS </echo>
+	<target name="data.nga">
+		<echo> Retrieving Data from NGA </echo>
+		<!--NGA world Gazetteer -->
+		<!-- NGA changed file naming convention in 2013 -->
+		<!-- property name="NGA_basename_2012" value="geonames_dd_dms_date_${NGA_date}" /-->
+		<property name="NGA_basename" value="geonames_${NGA_date}" />
+		<!-- alternate ftp path to the same data but way, way slower, Don't use unless desperate-->
+		<!--get src="ftp://ftp.nga.mil/pub2/gns_data/${NGA_basename}.zip" dest="${basedir}/GazetteerETL/GeoData/NGA" /-->
+		<get src="http://earth-info.nga.mil/gns/html/${NGA_basename}.zip" dest="${basedir}/GazetteerETL/GeoData/NGA" />
+		<unzip src="${basedir}/GazetteerETL/GeoData/NGA/${NGA_basename}.zip" dest="${basedir}/GazetteerETL/GeoData/NGA" />
+		<move file="${basedir}/GazetteerETL/GeoData/NGA/${NGA_basename}.txt" tofile="${basedir}/GazetteerETL/GeoData/NGA/geonames_dd_dms_date.txt" />
+	</target>
+
+	<target name="data.usgs">
+		<echo> Retrieving Data from USGS </echo>
 		<!-- The three parts of the USGS gazetteer -->
 		<property name="USGS_basename_Nat" value="NationalFile_${USGS_date}" />
 		<property name="USGS_basename_Gov" value="GOVT_UNITS_${USGS_date}" />
@@ -90,24 +98,24 @@
 		<move file="${basedir}/GazetteerETL/GeoData/USGS/${USGS_basename_Nat}.txt" tofile="${basedir}/GazetteerETL/GeoData/USGS/NationalFile.txt" />
 		<move file="${basedir}/GazetteerETL/GeoData/USGS/${USGS_basename_Gov}.txt" tofile="${basedir}/GazetteerETL/GeoData/USGS/GOVT_UNITS.txt" />
 		<move file="${basedir}/GazetteerETL/GeoData/USGS/${USGS_basename_All}.txt" tofile="${basedir}/GazetteerETL/GeoData/USGS/AllNames.txt" />
-        </target>
-  
-	<target name="getOriginalSources" depends="setProxy,data.nga,data.usgs">
-               <echo > Finished Retrieving Data Sources</echo>
 	</target>
 
-	<target name="build"  depends="clean,prepare,copy-libs">
+	<target name="getOriginalSources" depends="setProxy,data.nga,data.usgs">
+		<echo> Finished Retrieving Data Sources</echo>
+	</target>
+
+	<target name="build" depends="clean,prepare,copy-libs">
 		<antcall target="getOriginalSources" />
 		<!-- only one of the following targets will run, depending on OS -->
 		<antcall target="proc-gaz-win" />
 		<antcall target="proc-gaz-linux" />
 	</target>
-	
+
 
 	<!-- run the overall Gazetteer cleaning/transformation process in Kettle -->
 	<!-- this produces the MergedGazetteer.txt gazetteer file which contains the cleaned and merged gazetteer
 		data ready to be ingested into the Solr gazetteer -->
-	
+
 	<!-- win flavor of kettle call -->
 	<target name="proc-gaz-win" if="isWindows" depends="prepare">
 		<exec executable="cmd" spawn="false">
@@ -121,29 +129,39 @@
 
 	<!-- linux flavor of kettle call -->
 	<target name="proc-gaz-linux" if="isUnix" depends="prepare">
-                <echo >Launching ${kitchen.script.unix}</echo>
-                <echo >with options ${kettle.options.jvm} on kettle job ${processGazetteer.script}</echo>
+		<echo>Launching ${kitchen.script.unix}</echo>
+		<echo>with options ${kettle.options.jvm} on kettle job ${processGazetteer.script}</echo>
 		<exec executable="${kitchen.script.unix}" spawn="false">
-		        <env key="PENTAHO_DI_JAVA_OPTIONS" value="${kettle.options.jvm}" />
+			<env key="PENTAHO_DI_JAVA_OPTIONS" value="${kettle.options.jvm}" />
 			<arg value="-file" />
 			<arg value="${processGazetteer.script}" />
 		</exec>
-        </target>
+	</target>
 
-
-	<!-- zip and post the generated gazetteer data -->
-	<target name="post">
-		<!-- zip up the finished gazetteer data -->
-		<zip destfile="${outputDir}/gazdata-${DSTAMP}.zip">
+	<!-- zip the generated gazetteer data -->
+	<target name="zip" depends = "">
+		<zip destfile="${build.dir}/opensextant-gazetteer.zip">
 			<fileset file="${outputDir}/MergedGazetteer.txt" />
+			<fileset file="${outputDir}/MergedGazetteer_SMALL.txt" />
 			<fileset file="${resourceDir}/country-names-2013.csv" />
 			<fileset file="${resourceDir}/feature-metadata-2013.csv" />
 		</zip>
+	</target>
 
+	<!-- Publish the opensextant gazetteer data to the local Ivy repo-->
+	<target name="publish-local" depends="zip">
+		<ivy:resolve />
+		<ivy:publish resolver="local" overwrite="true" forcedeliver="true" pubrevision="${version}.${DSTAMP}">
+			<artifacts pattern="${build.dir}/[artifact].[ext]" />
+		</ivy:publish>
+	</target>
+	
+	
+	<!-- post the zipped gazetteer data -->
+	<target name="post" depends="zip">
 		<ftp server="${post.site}" remotedir="${post.dir}" userid="${post.user}" password="${post.password}">
 			<fileset file="${outputDir}/gazdata-${DSTAMP}.zip" />
 		</ftp>
-
 	</target>
 
 
