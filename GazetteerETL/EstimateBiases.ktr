@@ -653,6 +653,21 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <repeat>N</repeat>
       </field>
       <field>
+        <name>PLACE_NAME_EXPANDED</name>
+        <type>String</type>
+        <format/>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif>-</nullif>
+        <ifnull/>
+        <position>-1</position>
+        <length>32</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
         <name>LATITUDE</name>
         <type>Number</type>
         <format>#.#</format>
@@ -924,6 +939,21 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       </field>
       <field>
         <name>NAME_TYPE_SYSTEM</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <ifnull/>
+        <position>-1</position>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>SEARCH_ONLY</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -2057,6 +2087,18 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <precision>-1</precision>
       </field>
       <field>
+        <name>PLACE_NAME_EXPANDED</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
         <name>LATITUDE</name>
         <type>Number</type>
         <format>0.#####</format>
@@ -2298,6 +2340,18 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       </field>
       <field>
         <name>SplitCategory</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SEARCH_ONLY</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -2773,6 +2827,18 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <precision>-1</precision>
       </field>
       <field>
+        <name>PLACE_NAME_EXPANDED</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
         <name>LATITUDE</name>
         <type>Number</type>
         <format>0.#####</format>
@@ -3014,6 +3080,18 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       </field>
       <field>
         <name>SplitCategory</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SEARCH_ONLY</name>
         <type>String</type>
         <format/>
         <currency/>

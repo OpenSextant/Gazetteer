@@ -199,7 +199,7 @@
     </notepad>
   </notepads>
   <order>
-  <hop> <from>Govt Units Sorted</from><to>AddGovtUnitInfo</to><enabled>Y</enabled> </hop>  <hop> <from>National File Sorted</from><to>AddGovtUnitInfo</to><enabled>Y</enabled> </hop>  <hop> <from>Name Variants</from><to>OnlyUnofficialNames</to><enabled>Y</enabled> </hop>  <hop> <from>AddGovtUnitInfo</from><to>AddVariantNames</to><enabled>Y</enabled> </hop>  <hop> <from>Name variants Sorted</from><to>AddVariantNames</to><enabled>Y</enabled> </hop>  <hop> <from>OnlyUnofficialNames</from><to>Rename Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Rename Fields</from><to>Name variants Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Unused fields GU</from><to>Govt Units Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>National File</from><to>Remove Unused fields National</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Unused fields National</from><to>National File Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>MAP Feature Code&#47;Class</to><enabled>Y</enabled> </hop>  <hop> <from>GNIS to Universal Feature Code&#47;Class</from><to>MAP Feature Code&#47;Class</to><enabled>Y</enabled> </hop>  <hop> <from>Country Code Lookup</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>MAP Feature Code&#47;Class</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>Map FIPS to ISO</from><to>Split field to rows</to><enabled>Y</enabled> </hop>  <hop> <from>Add Error Fields</from><to>Feature Class&#47;Code Check</to><enabled>Y</enabled> </hop>  <hop> <from>Coord Check</from><to>Name Check</to><enabled>Y</enabled> </hop>  <hop> <from>Create Conflate Key</from><to>Dedup</to><enabled>Y</enabled> </hop>  <hop> <from>Feature Class&#47;Code Check</from><to>Field Validation</to><enabled>Y</enabled> </hop>  <hop> <from>Feature Code Lookup</from><to>Feature Class&#47;Code Check</to><enabled>Y</enabled> </hop>  <hop> <from>Field Validation</from><to>Coord Check</to><enabled>Y</enabled> </hop>  <hop> <from>Filter Errors</from><to>Error Log</to><enabled>Y</enabled> </hop>  <hop> <from>CountryAdjusts</from><to>AdjustCountryCodesToFIPS</to><enabled>Y</enabled> </hop>  <hop> <from>ReplaceAdjustedCountryCode</from><to>Remove Unused fields GU</to><enabled>Y</enabled> </hop>  <hop> <from>AdjustCountryCodesToFIPS</from><to>ReplaceAdjustedCountryCode</to><enabled>Y</enabled> </hop>  <hop> <from>Govt Units</from><to>AdjustCountryCodesToFIPS</to><enabled>Y</enabled> </hop>  <hop> <from>AddVariantNames</from><to>Correct CC for US Possessions</to><enabled>Y</enabled> </hop>  <hop> <from>Correct CC for US Possessions</from><to>New Record from variant</to><enabled>Y</enabled> </hop>  <hop> <from>Dedup</from><to>Duplicate Log</to><enabled>Y</enabled> </hop>  <hop> <from>New Record from variant</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Rename to Universal</from><to>Add Error Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Split field to rows</from><to>Add GNIS source 2</to><enabled>Y</enabled> </hop>  <hop> <from>Add GNIS source 2</from><to>Rename to Universal</to><enabled>Y</enabled> </hop>  <hop> <from>Name Check</from><to>Script Check</to><enabled>Y</enabled> </hop>  <hop> <from>Script Check</from><to>Filter Errors</to><enabled>Y</enabled> </hop>  <hop> <from>Dedup</from><to>Set name type</to><enabled>Y</enabled> </hop>  <hop> <from>Set name type</from><to>Clean USGS Output</to><enabled>Y</enabled> </hop>  <hop> <from>Filter Errors</from><to>Create base Name</to><enabled>Y</enabled> </hop>  <hop> <from>Create base Name</from><to>Create Conflate Key</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Govt Units Sorted</from><to>AddGovtUnitInfo</to><enabled>Y</enabled> </hop>  <hop> <from>National File Sorted</from><to>AddGovtUnitInfo</to><enabled>Y</enabled> </hop>  <hop> <from>Name Variants</from><to>OnlyUnofficialNames</to><enabled>Y</enabled> </hop>  <hop> <from>AddGovtUnitInfo</from><to>AddVariantNames</to><enabled>Y</enabled> </hop>  <hop> <from>Name variants Sorted</from><to>AddVariantNames</to><enabled>Y</enabled> </hop>  <hop> <from>OnlyUnofficialNames</from><to>Rename Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Rename Fields</from><to>Name variants Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Unused fields GU</from><to>Govt Units Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>National File</from><to>Remove Unused fields National</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Unused fields National</from><to>National File Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>MAP Feature Code&#47;Class</to><enabled>Y</enabled> </hop>  <hop> <from>GNIS to Universal Feature Code&#47;Class</from><to>MAP Feature Code&#47;Class</to><enabled>Y</enabled> </hop>  <hop> <from>Country Code Lookup</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>MAP Feature Code&#47;Class</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>Map FIPS to ISO</from><to>Split field to rows</to><enabled>Y</enabled> </hop>  <hop> <from>Add Error Fields</from><to>Feature Class&#47;Code Check</to><enabled>Y</enabled> </hop>  <hop> <from>Coord Check</from><to>Name Check</to><enabled>Y</enabled> </hop>  <hop> <from>Create Conflate Key</from><to>Dedup</to><enabled>Y</enabled> </hop>  <hop> <from>Feature Class&#47;Code Check</from><to>Field Validation</to><enabled>Y</enabled> </hop>  <hop> <from>Feature Code Lookup</from><to>Feature Class&#47;Code Check</to><enabled>Y</enabled> </hop>  <hop> <from>Field Validation</from><to>Coord Check</to><enabled>Y</enabled> </hop>  <hop> <from>Filter Errors</from><to>Error Log</to><enabled>Y</enabled> </hop>  <hop> <from>CountryAdjusts</from><to>AdjustCountryCodesToFIPS</to><enabled>Y</enabled> </hop>  <hop> <from>ReplaceAdjustedCountryCode</from><to>Remove Unused fields GU</to><enabled>Y</enabled> </hop>  <hop> <from>AdjustCountryCodesToFIPS</from><to>ReplaceAdjustedCountryCode</to><enabled>Y</enabled> </hop>  <hop> <from>Govt Units</from><to>AdjustCountryCodesToFIPS</to><enabled>Y</enabled> </hop>  <hop> <from>AddVariantNames</from><to>Correct CC for US Possessions</to><enabled>Y</enabled> </hop>  <hop> <from>Correct CC for US Possessions</from><to>New Record from variant</to><enabled>Y</enabled> </hop>  <hop> <from>Dedup</from><to>Duplicate Log</to><enabled>Y</enabled> </hop>  <hop> <from>New Record from variant</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Rename to Universal</from><to>Add Error Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Split field to rows</from><to>Add Constant Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Add Constant Fields</from><to>Rename to Universal</to><enabled>Y</enabled> </hop>  <hop> <from>Name Check</from><to>Script Check</to><enabled>Y</enabled> </hop>  <hop> <from>Script Check</from><to>Filter Errors</to><enabled>Y</enabled> </hop>  <hop> <from>Dedup</from><to>Set name type</to><enabled>Y</enabled> </hop>  <hop> <from>Set name type</from><to>Clean USGS Output</to><enabled>Y</enabled> </hop>  <hop> <from>Filter Errors</from><to>Create base Name</to><enabled>Y</enabled> </hop>  <hop> <from>Create base Name</from><to>Create Conflate Key</to><enabled>Y</enabled> </hop>  </order>
   <step>
     <name>Add Error Fields</name>
     <type>Constant</type>
@@ -243,7 +243,7 @@
     </step>
 
   <step>
-    <name>Add GNIS source 2</name>
+    <name>Add Constant Fields</name>
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
@@ -294,6 +294,28 @@
         <decimal/>
         <group/>
         <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PLACE_NAME_EXPANDED</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SEARCH_ONLY</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>F</nullif>
         <length>-1</length>
         <precision>-1</precision>
       </field>
@@ -451,6 +473,18 @@
       </field>
       <field>
         <name>PLACE_NAME</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>PLACE_NAME_EXPANDED</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -679,6 +713,18 @@
       </field>
       <field>
         <name>NAME_TYPE_SYSTEM</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>SEARCH_ONLY</name>
         <type>String</type>
         <format/>
         <currency/>
@@ -3449,11 +3495,19 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
+      </field>      <field>        <name>PLACE_NAME_EXPANDED</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SEARCH_ONLY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
       <remove>        <name>NAMELIST</name>
       </remove>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1592</xloc>
+      <xloc>1618</xloc>
       <yloc>245</yloc>
       <draw>Y</draw>
       </GUI>
@@ -3700,6 +3754,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
    <rownum>N</rownum>
    <rownum_field/>
    <resetrownumber>Y</resetrownumber>
+   <delimiter_is_regex>N</delimiter_is_regex>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>1362</xloc>
