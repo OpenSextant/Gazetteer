@@ -204,7 +204,39 @@
       </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>742</xloc>
+      <xloc>1021</xloc>
+      <yloc>75</yloc>
+      </entry>
+    <entry>
+      <name>Error Checking and Deduping</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>${Internal.Job.Filename.Directory}&#47;ErrorChecking.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>709</xloc>
       <yloc>74</yloc>
       </entry>
   </entries>
@@ -238,6 +270,15 @@
     </hop>
     <hop>
       <from>Clean Adhoc Data</from>
+      <to>Error Checking and Deduping</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Error Checking and Deduping</from>
       <to>Estimate Place biases</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -248,12 +289,11 @@
   </hops>
   <notepads>
     <notepad>
-      <note>First, clean and transform each of the gazetteer sources into a consistent form.
-This includes de-duping within each gazetteer.</note>
+      <note>First, clean and transform each of the gazetteer sources into a consistent form.</note>
       <xloc>128</xloc>
       <yloc>16</yloc>
-      <width>398</width>
-      <heigth>35</heigth>
+      <width>392</width>
+      <heigth>22</heigth>
       <fontname>Microsoft Sans Serif</fontname>
       <fontsize>8</fontsize>
       <fontbold>N</fontbold>
@@ -270,15 +310,36 @@ This includes de-duping within each gazetteer.</note>
       <drawshadow>Y</drawshadow>
     </notepad>
     <notepad>
-      <note>Next, estimate the PLACE_NAME and PLACE_ID biases for each entry.
-Also merge into single data set.
-FUTURE: cross gazetteer deduping could occur here</note>
-      <xloc>590</xloc>
-      <yloc>145</yloc>
-      <width>366</width>
-      <heigth>47</heigth>
-      <fontname/>
-      <fontsize>-1</fontsize>
+      <note>Finally, estimate the PLACE_NAME and PLACE_ID biases for each entry.</note>
+      <xloc>935</xloc>
+      <yloc>19</yloc>
+      <width>436</width>
+      <heigth>25</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>165</backgroundcolorgreen>
+      <backgroundcolorblue>0</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Next look for bad records and dedupe and
+merge clean deduped results into single data set
+</note>
+      <xloc>577</xloc>
+      <yloc>10</yloc>
+      <width>297</width>
+      <heigth>40</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
       <fontbold>N</fontbold>
       <fontitalic>N</fontitalic>
       <fontcolorred>0</fontcolorred>

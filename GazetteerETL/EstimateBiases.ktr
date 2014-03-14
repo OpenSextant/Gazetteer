@@ -95,8 +95,8 @@
     <notepad>
       <note>Token level analysis:
 look at case,vocabulary and suffix</note>
-      <xloc>1292</xloc>
-      <yloc>416</yloc>
+      <xloc>1430</xloc>
+      <yloc>419</yloc>
       <width>175</width>
       <heigth>35</heigth>
       <fontname>Microsoft Sans Serif</fontname>
@@ -200,8 +200,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 <parameter_description/>
 </usage_parameter></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1283</xloc>
-      <yloc>302</yloc>
+      <xloc>1460</xloc>
+      <yloc>301</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -329,8 +329,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 <parameter_description>value to add high priority types</parameter_description>
 </usage_parameter></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2295</xloc>
-      <yloc>299</yloc>
+      <xloc>2628</xloc>
+      <yloc>302</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -357,8 +357,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2786</xloc>
-      <yloc>410</yloc>
+      <xloc>3094</xloc>
+      <yloc>413</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -426,8 +426,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1648</xloc>
-      <yloc>302</yloc>
+      <xloc>1893</xloc>
+      <yloc>300</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -511,8 +511,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 <parameter_description>The algorithm used to produce the reduced form of the names for matching purposes</parameter_description>
 </usage_parameter></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>888</xloc>
-      <yloc>301</yloc>
+      <xloc>1009</xloc>
+      <yloc>299</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -558,8 +558,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1134</xloc>
-      <yloc>301</yloc>
+      <xloc>1290</xloc>
+      <yloc>302</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -601,17 +601,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <encoding>UTF-8</encoding>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\GeoData\Merged\AdHoc.txt</name>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-      <name>${Internal.Transformation.Filename.Directory}\GeoData\Merged\NGA.txt</name>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-      <name>${Internal.Transformation.Filename.Directory}\GeoData\Merged\USGS.txt</name>
+      <name>C:\Users\dlutz\git\Gazetteer\GazetteerETL\GeoData\Merged\clean.txt</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -908,21 +898,6 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <repeat>N</repeat>
       </field>
       <field>
-        <name>CONFLATE_KEY</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <nullif>-</nullif>
-        <ifnull/>
-        <position>-1</position>
-        <length>15</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-      </field>
-      <field>
         <name>NAME_TYPE</name>
         <type>String</type>
         <format/>
@@ -995,7 +970,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <sizeFieldName/>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>37</xloc>
+      <xloc>48</xloc>
       <yloc>299</yloc>
       <draw>Y</draw>
       </GUI>
@@ -1182,8 +1157,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <spreadsheet_type>POI</spreadsheet_type>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>763</xloc>
-      <yloc>175</yloc>
+      <xloc>869</xloc>
+      <yloc>170</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1280,8 +1255,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 <parameter_description>The algorithm used to produce the reduced form of the names for matching purposes</parameter_description>
 </usage_parameter></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>267</xloc>
-      <yloc>305</yloc>
+      <xloc>292</xloc>
+      <yloc>300</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1425,8 +1400,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </fields><clear_result_fields>N</clear_result_fields>
 <info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1890</xloc>
-      <yloc>299</yloc>
+      <xloc>2169</xloc>
+      <yloc>301</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1453,7 +1428,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1778</xloc>
+      <xloc>2023</xloc>
       <yloc>301</yloc>
       <draw>Y</draw>
       </GUI>
@@ -1541,8 +1516,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </fields><clear_result_fields>N</clear_result_fields>
 <info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2672</xloc>
-      <yloc>300</yloc>
+      <xloc>2980</xloc>
+      <yloc>303</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1638,8 +1613,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 <step_description/>
 </info_step></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1525</xloc>
-      <yloc>304</yloc>
+      <xloc>1762</xloc>
+      <yloc>300</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1789,8 +1764,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <spreadsheet_type>POI</spreadsheet_type>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>636</xloc>
-      <yloc>175</yloc>
+      <xloc>708</xloc>
+      <yloc>173</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1830,8 +1805,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>635</xloc>
-      <yloc>301</yloc>
+      <xloc>704</xloc>
+      <yloc>302</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1885,7 +1860,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 		// if well known(lat,long) close to record(lat,long)
 		Double delta = Math.sqrt( Math.pow((recLat - wellKnownLat),2) + Math.pow((recLong - wellKnownLong),2) ); 
 
-		// if distanace greater than threshold, not the well known place, set to 0.0
+		// if distanace greater than threshold, not the well known place, set ID bais to 0.0
 		if( delta >= deltaThresh) {
 			get(Fields.Out, "wellknown_id_bias").setValue(r, 0.0);
 		}
@@ -1910,8 +1885,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 <parameter_description>The algorithm used to produce the reduced form of the names for matching purposes</parameter_description>
 </usage_parameter></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>507</xloc>
-      <yloc>300</yloc>
+      <xloc>546</xloc>
+      <yloc>302</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1945,8 +1920,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>762</xloc>
-      <yloc>301</yloc>
+      <xloc>866</xloc>
+      <yloc>300</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2002,7 +1977,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>396</xloc>
+      <xloc>411</xloc>
       <yloc>301</yloc>
       <draw>Y</draw>
       </GUI>
@@ -2365,8 +2340,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2903</xloc>
-      <yloc>298</yloc>
+      <xloc>3169</xloc>
+      <yloc>301</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2400,8 +2375,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2015</xloc>
-      <yloc>298</yloc>
+      <xloc>2315</xloc>
+      <yloc>301</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2435,8 +2410,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2149</xloc>
-      <yloc>298</yloc>
+      <xloc>2474</xloc>
+      <yloc>301</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2526,8 +2501,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <spreadsheet_type>POI</spreadsheet_type>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2148</xloc>
-      <yloc>185</yloc>
+      <xloc>2475</xloc>
+      <yloc>188</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2617,8 +2592,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <spreadsheet_type>POI</spreadsheet_type>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2021</xloc>
-      <yloc>183</yloc>
+      <xloc>2320</xloc>
+      <yloc>186</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2714,8 +2689,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 <parameter_description/>
 </usage_parameter></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1134</xloc>
-      <yloc>196</yloc>
+      <xloc>1290</xloc>
+      <yloc>197</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2742,8 +2717,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <max_value>999999999</max_value>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>149</xloc>
-      <yloc>302</yloc>
+      <xloc>173</xloc>
+      <yloc>299</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -3105,8 +3080,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2908</xloc>
-      <yloc>487</yloc>
+      <xloc>3196</xloc>
+      <yloc>491</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -3201,8 +3176,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </fields><clear_result_fields>N</clear_result_fields>
 <info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>2430</xloc>
-      <yloc>300</yloc>
+      <xloc>2763</xloc>
+      <yloc>303</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -3304,8 +3279,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <spreadsheet_type>POI</spreadsheet_type>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1522</xloc>
-      <yloc>115</yloc>
+      <xloc>1762</xloc>
+      <yloc>134</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -3329,7 +3304,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
    <delimiter_is_regex>N</delimiter_is_regex>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1027</xloc>
+      <xloc>1162</xloc>
       <yloc>300</yloc>
       <draw>Y</draw>
       </GUI>
@@ -3452,8 +3427,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <spreadsheet_type>POI</spreadsheet_type>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1417</xloc>
-      <yloc>115</yloc>
+      <xloc>1627</xloc>
+      <yloc>120</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -3493,8 +3468,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1418</xloc>
-      <yloc>303</yloc>
+      <xloc>1625</xloc>
+      <yloc>302</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -3668,8 +3643,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <spreadsheet_type>POI</spreadsheet_type>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>396</xloc>
-      <yloc>175</yloc>
+      <xloc>413</xloc>
+      <yloc>165</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -3870,8 +3845,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <sizeFieldName/>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1136</xloc>
-      <yloc>89</yloc>
+      <xloc>1292</xloc>
+      <yloc>90</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

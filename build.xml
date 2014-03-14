@@ -42,6 +42,7 @@
 		<delete quiet="true" includeemptydirs="true">
 			<fileset dir="${basedir}/GazetteerETL/Logs" includes="**/*" />
 			<fileset dir="${basedir}/GazetteerETL/GeoData/Merged" includes="**/*" />
+			<fileset dir="${basedir}/GazetteerETL/GeoData/transformed" includes="**/*" />
 		</delete>
 		<delete dir="${build.dir}" />
 		<mkdir dir="${build.dir}" />
@@ -53,6 +54,7 @@
 		<mkdir dir="${basedir}/GazetteerETL/GeoData/NGA" />
 		<mkdir dir="${basedir}/GazetteerETL/GeoData/USGS" />
 		<mkdir dir="${basedir}/GazetteerETL/GeoData/Merged" />
+		<mkdir dir="${basedir}/GazetteerETL/GeoData/transformed" />
 	</target>
 
 	<!-- copies of required jars, included in lib dir -->
