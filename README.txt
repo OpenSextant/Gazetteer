@@ -12,16 +12,11 @@
  		(Developed/tested with versions "4.4.0-stable" )
  		NOTE: Kettle  "5.0.1.A-stable" introduced an intermittent issue reading the Excel files used for reference data. Avoid for now.
  		 
- 	 You may want to give Kettle some more memory. To do so, edit <KETTLE_HOME>/Spoon.bat (or spoon.sh, whichever you intend to use) to increase the Java heap space
- 			In either file, change 
- 				PENTAHO_DI_JAVA_OPTIONS="-Xmx512m"
- 			to
- 				PENTAHO_DI_JAVA_OPTIONS="-Xmx1200m"	
- 		
  	2) copy or rename build.local.properties to build.properties and edit:
  	 	a) set the "kettle.home" parameter to where you installed Kettle from step #1 above
  	 	b) set the proxy.host and proxy.port parameters if you are behind a firewall
  		c) set the "NGA_date" and "USGS_date" parameters (see build.properties for details)
+ 		d) (optional) modify the "kettle.options.jvm" setting to increase/reduce memory used in gazetteer processing. Setting this below about 1G will cause excessive processing times.
  		
  	3) do the build: ant
  	
@@ -39,18 +34,24 @@
  	AdHoc to Universal.ktr - Kettle Transformation that cleans and transforms the user defined gazetteer data into GeoData/Merged/AdHoc.txt
  	EstimateBiases.ktr - Kettle Transformation that merges results of above three Transformations and adds some needed statistical measures to each gazetteer record.
  
- 	GeoData - input (raw) gazetteer data
+ 	GeoData - input (raw),intermediate and finished gazetteer data
 		AdHoc - An Excel spreadsheet with few entries to patch a hole in the big official gazetteers. Also, an example of adding your own gazetteer data
  		NGA - The data from NGA GeoNames (http://earth-info.nga.mil/gns/html/namefiles.htm), the "World File"
  		USGS - The data from USGS GNIS (http://geonames.usgs.gov/domestic/download_data.htm) in three separate files:
  			a) The "National File" (could also use one of the single state files)
  			b) The "Government Units" Topical Gazetteer
  			c) The "All Names" Topical gazetteer
+ 		Merged - final (and almost final) gazetteer data
+ 				a) MergedGazetteer.tx - the final gazetteer data (transformed,merged, cleaned,deduped with estimated bias values)
+ 				b) MergedGazetteer_SMALL.txt - a small subset of the final gazetteer. Intended for testing. Contains only the "Basic" partition
+ 				c) clean.txt - this is the transformed,merged, cleaned and deduped gazetteer data (no bias or partition values)
+ 		transformed - contains intermediate stage data: data has been transformed to OpenSextant model but not yet cleaned nor bias values calculated
 	
 	lib - a couple of jars we use in the processing
 	
- 	Logs - directory where output logs go. Each of the data transformation steps (NGA,USGS and AdHoc) will create logs for any duplicate and error(malformed/invalid) records found.
+ 	Logs - directory where output logs go. Separate logs for duplicate and error(malformed/invalid) records. Duplicate and error records are not included in final gazetteer.
+ 			An additional log for records which have been labeled as SEARCH_ONLY is include for info purposes. These records are included in final gazetteer.
 	
-	Resources - data used in the cleaning, transformation and statistical estimation processes
+	Resources - data used in the cleaning, transformation and statistical estimation processes. See README in that directory for details.
   				
  
