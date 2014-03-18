@@ -2074,7 +2074,10 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 	// identify the script(s) used by the name
 	Set scripts = PhoneticUtils.scripts(name);
 
-	if(scripts.size() > 1) {
+	// set the scripts field
+	get(Fields.Out, "SCRIPT").setValue(r, scripts.toString());
+
+	if(!scriptsOK(scripts)) {
 		error = error  + "," + "MultipleScripts";
 		residue = residue +  + "," +  scripts.toString();
 	}
@@ -2082,8 +2085,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
  	// Set error and residue fields
     get(Fields.Out, "Error").setValue(r, error);
  	get(Fields.Out, "ErrorDetails").setValue(r, residue);
-	// set the scripts field
-	get(Fields.Out, "SCRIPT").setValue(r, scripts.toString());
+
 
 	// Send the row on to the next step.
     putRow(data.outputRowMeta, r);
@@ -2091,6 +2093,22 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 	return true;
 }
 
+
+public static boolean scriptsOK(Set scripts){
+
+	// just one = OK
+	if(scripts.size() == 1){ return true;}
+
+	// if any combination of CJK, HIRAGANA, KATAKANA = OK
+	Set tmp = new HashSet(scripts);
+	tmp.remove("CJK");
+	tmp.remove("HIRAGANA");
+	tmp.remove("KATAKANA");
+
+	if(tmp.size() == 0){ return true;}
+	
+ 	return false;
+}
 
 
 ]]></class_source>
@@ -2169,7 +2187,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 	// if appropriate, append some info to residue field
 
 	// name has numbers
-	if( name.matches(".*\\p{N}+.*") ){
+	if(nameType.equals("name") &&  name.matches(".*\\p{N}+.*") ){
 		error =  error + "," + "NumbersInName";
 		srchOnly ="T";
 	}
