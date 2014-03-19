@@ -585,15 +585,18 @@
     Double lat = get(Fields.In, "LATITUDE").getNumber(r);
 	Double lon = get(Fields.In, "LONGITUDE").getNumber(r);
 
+	if( lat == null || lon ==null) {
+		error = error + "," + "NullCoords";
+	}else{
 
-	if(lat > 90.0 || lat < -90.0 || lon > 180.0 || lon < -180.0 ) {
-		error = error + "," + "CoordOutOfRange";
+		if(lat > 90.0 || lat < -90.0 || lon > 180.0 || lon < -180.0 ) {
+			error = error + "," + "CoordOutOfRange";
+		}
+
+		if( lat == 0.0  &&  lon == 0.0) {
+			error = error + "," + "ZeroCoords";
+		}
 	}
-
-	if( lat == 0.0  &&  lon == 0.0) {
-		error = error + "," + "ZeroCoords";
-	}
-
 
 
  	// Set error field
@@ -1478,18 +1481,6 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <precision>-1</precision>
       </field>
       <field>
-        <name>MappedFeatureCombination</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
         <name>SCRIPT</name>
         <type>String</type>
         <format/>
@@ -1751,16 +1742,25 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 
 	// check for valid values and combinations
 
-	// at least 1 cc must be non null
-		// look for bad or unmapped country code
-		if(ccFIPS == null && ccISO2 == null && ccISO3 == null)  {
-		error = error + "," + "NoCounryCode" ;
+		// look for missing or unmapped country code
+		if(ccFIPS == null || ccISO2 == null || ccISO3 == null)  {
+		error = error + "," + "NoCountryCode" ;
+		}else{
+			if(ccFIPS.matches("UNMAPPED") || ccISO2.matches("UNMAPPED") || ccISO3.matches("UNMAPPED"))  {
+			error = error + "," + "NoCountryCode" ;
+			}
 		}
-
 
 
 		// check for valid FIPS and ISO ccs
 
+	if( featCode.matches("FAC[0-9]{5}")) {
+		// all FAC type codes should be class "S"
+		if(!featClass.equals("S")){
+			error = error + "," + "BadFeatureClassCodeOrMismatch";
+			residue = featCombo;
+		}
+	}else{
 
 		// check for valid feature code combo 
 		if( mappedCombo == null  || mappedCombo.equals("UNMATCHED") || !mappedCombo.equals(featCombo)) {
@@ -1768,7 +1768,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 		residue = featCombo;
 
 		}
-
+	}
 
 
  	// Set error field
@@ -2600,7 +2600,7 @@ public static boolean scriptsOK(Set scripts){
     <encoding>UTF-8</encoding>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>C:\Users\dlutz\git\Gazetteer\GazetteerETL\GeoData\transformed</name>
+      <name>${Internal.Transformation.Filename.Directory}\GeoData\transformed</name>
       <filemask>.*_xformed.txt</filemask>
       <exclude_filemask/>
       <file_required>N</file_required>

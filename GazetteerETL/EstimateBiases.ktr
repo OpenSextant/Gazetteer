@@ -601,7 +601,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <encoding>UTF-8</encoding>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>C:\Users\dlutz\git\Gazetteer\GazetteerETL\GeoData\Merged\clean.txt</name>
+      <name>${Internal.Transformation.Filename.Directory}\GeoData\Merged\clean.txt</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
