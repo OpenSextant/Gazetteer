@@ -172,12 +172,16 @@
 	
 	
 	<!-- post the zipped gazetteer data -->
-	<target name="post" depends="zip">
+	<target name="post" depends="">
+		   <copy todir="${build.dir}/temp">
+		      <mappedresources>
+		      	<fileset file="${build.dir}/${publish.gaz.name}" />
+		        <globmapper from="*" to="gazdata-${DSTAMP}.zip"/>
+		      </mappedresources>
+		    </copy>
 		<ftp server="${post.site}" remotedir="${post.dir}" userid="${post.user}" password="${post.password}">
-			<fileset file="${outputDir}/gazdata-${DSTAMP}.zip" />
+			<fileset file="${build.dir}/temp/gazdata-${DSTAMP}.zip" />
 		</ftp>
 	</target>
-
-
 
 </project>
