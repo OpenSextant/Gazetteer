@@ -34,8 +34,6 @@
 		</or>
 	</condition>
 
-	<property name="prebuilt.gaz.loc" value="http://opensextant.org/downloads/gazdata" />
-	<property name="prebuilt.gaz.name" value="latestGazetteer.zip" />
 	<property name="publish.gaz.name" value="opensextant-gazetteer.zip" />
 	
 	<!--====================== Targets ============================-->
@@ -153,17 +151,9 @@
 		</zip>
 	</target>
 
-	<!-- fetch the prebuilt gazetteer data from opensextant.org -->
-	<target name="fetch.prebuilt.gaz" depends="setProxy,clean">
-		<echo> Retrieving prebuilt gazetteer from opensextant.org</echo>
-		<get src="${prebuilt.gaz.loc}/${prebuilt.gaz.name}" dest="${build.dir}/${publish.gaz.name}" />
-	</target>
-	
+
 	<!-- Publish the opensextant gazetteer data to the local Ivy repo-->
-	<!--TODO need a better way to choose between building and fetching -->
-	<!-- Uncomment one of the two following lines to choose either fetching the prebuilt gazetteer or building from source data -->
-	<!--target name="publish-local" depends="zip"-->
-	<target name="publish-local" depends="fetch.prebuilt.gaz">
+	<target name="publish-local" depends="zip">
 		<ivy:resolve />
 		<ivy:publish resolver="local" overwrite="true" forcedeliver="true" pubrevision="${version}.${DSTAMP}">
 			<artifacts pattern="${build.dir}/[artifact].[ext]" />
