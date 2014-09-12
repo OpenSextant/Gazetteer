@@ -116,7 +116,7 @@ look at case,vocabulary and suffix</note>
     </notepad>
   </notepads>
   <order>
-  <hop> <from>Tokenize BaseName</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Build Sequences</from><to>Discard internal records</to><enabled>Y</enabled> </hop>  <hop> <from>WordStat Input</from><to>Process Case Info</to><enabled>Y</enabled> </hop>  <hop> <from>Process Case Info</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Vocab Input</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>PriorWeightsFromMining</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>Discard internal records</from><to>CreateNamePattern</to><enabled>Y</enabled> </hop>  <hop> <from>PatternWeights Input</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>CreateNamePattern</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>MinedWeightLookup</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>Clean gazetteers In</from><to>RecordID Sequence</to><enabled>Y</enabled> </hop>  <hop> <from>RecordID Sequence</from><to>Create base Name</to><enabled>Y</enabled> </hop>  <hop> <from>Suffix Input</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>  <hop> <from>Vocab Lookup</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>  <hop> <from>EstimateFromSuffix</from><to>Build Sequences</to><enabled>Y</enabled> </hop>  <hop> <from>Country Weight input</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>  <hop> <from>FeatureType Weight Input</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>  <hop> <from>ID Bias from Feature Type</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>  <hop> <from>ID Bias from well known</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>  <hop> <from>ID Biase from Country</from><to>Calculate Total ID bias</to><enabled>Y</enabled> </hop>  <hop> <from>Is well known</from><to>ID Bias from well known</to><enabled>Y</enabled> </hop>  <hop> <from>Well Known Places Weight input</from><to>Is well known</to><enabled>Y</enabled> </hop>  <hop> <from>Create base Name</from><to>Is well known</to><enabled>Y</enabled> </hop>  <hop> <from>Calculate Total ID bias</from><to>Tokenize BaseName</to><enabled>Y</enabled> </hop>  <hop> <from>PatternWeightLookup</from><to>Adjustments</to><enabled>Y</enabled> </hop>  <hop> <from>Case Stats Lookup</from><to>Adjust for unseen&#47;common tokens</to><enabled>Y</enabled> </hop>  <hop> <from>Adjust for unseen&#47;common tokens</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Adjustments</from><to>Set filecategory</to><enabled>Y</enabled> </hop>  <hop> <from>Set filecategory</from><to>Estimate PLACE_NAME_BIAS</to><enabled>Y</enabled> </hop>  <hop> <from>Basic Category only</from><to>SMALL Merged and Biased out</to><enabled>Y</enabled> </hop>  <hop> <from>Estimate PLACE_NAME_BIAS</from><to>Negative Bias Check</to><enabled>Y</enabled> </hop>  <hop> <from>Negative Bias Check</from><to>Merged and Biased out</to><enabled>Y</enabled> </hop>  <hop> <from>Negative Bias Check</from><to>Basic Category only</to><enabled>Y</enabled> </hop>  <hop> <from>Negative Bias Only</from><to>Negative Bias Log</to><enabled>Y</enabled> </hop>  <hop> <from>Negative Bias Check</from><to>Negative Bias Only</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Tokenize BaseName</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Build Sequences</from><to>Discard internal records</to><enabled>Y</enabled> </hop>  <hop> <from>WordStat Input</from><to>Process Case Info</to><enabled>Y</enabled> </hop>  <hop> <from>Process Case Info</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Vocab Input</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>PriorWeightsFromMining</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>Discard internal records</from><to>CreateNamePattern</to><enabled>Y</enabled> </hop>  <hop> <from>PatternWeights Input</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>CreateNamePattern</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>MinedWeightLookup</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>Clean gazetteers In</from><to>RecordID Sequence</to><enabled>Y</enabled> </hop>  <hop> <from>Suffix Input</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>  <hop> <from>Vocab Lookup</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>  <hop> <from>EstimateFromSuffix</from><to>Build Sequences</to><enabled>Y</enabled> </hop>  <hop> <from>Country Weight input</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>  <hop> <from>FeatureType Weight Input</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>  <hop> <from>ID Bias from Feature Type</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>  <hop> <from>ID Bias from well known</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>  <hop> <from>ID Biase from Country</from><to>Calculate Total ID bias</to><enabled>Y</enabled> </hop>  <hop> <from>Is well known</from><to>ID Bias from well known</to><enabled>Y</enabled> </hop>  <hop> <from>Well Known Places Weight input</from><to>Is well known</to><enabled>Y</enabled> </hop>  <hop> <from>Calculate Total ID bias</from><to>Tokenize BaseName</to><enabled>Y</enabled> </hop>  <hop> <from>PatternWeightLookup</from><to>Adjustments</to><enabled>Y</enabled> </hop>  <hop> <from>Case Stats Lookup</from><to>Adjust for unseen&#47;common tokens</to><enabled>Y</enabled> </hop>  <hop> <from>Adjust for unseen&#47;common tokens</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Adjustments</from><to>Set filecategory</to><enabled>Y</enabled> </hop>  <hop> <from>Set filecategory</from><to>Estimate PLACE_NAME_BIAS</to><enabled>Y</enabled> </hop>  <hop> <from>Basic Category only</from><to>SMALL Merged and Biased out</to><enabled>Y</enabled> </hop>  <hop> <from>Estimate PLACE_NAME_BIAS</from><to>Negative Bias Check</to><enabled>Y</enabled> </hop>  <hop> <from>Negative Bias Check</from><to>Merged and Biased out</to><enabled>Y</enabled> </hop>  <hop> <from>Negative Bias Check</from><to>Basic Category only</to><enabled>Y</enabled> </hop>  <hop> <from>RecordID Sequence</from><to>Is well known</to><enabled>Y</enabled> </hop>  </order>
   <step>
     <name>Adjust for unseen&#47;common tokens</name>
     <type>UserDefinedJavaClass</type>
@@ -942,6 +942,36 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <trim_type>none</trim_type>
         <repeat>N</repeat>
       </field>
+      <field>
+        <name>baseName</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <ifnull/>
+        <position>-1</position>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>tokenCount</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <ifnull/>
+        <position>-1</position>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+        <repeat>N</repeat>
+      </field>
     </fields>
     <limit>0</limit>
     <error_ignored>N</error_ignored>
@@ -1159,104 +1189,6 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>869</xloc>
       <yloc>170</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Create base Name</name>
-    <type>UserDefinedJavaClass</type>
-    <description/>
-    <distribute>N</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-
-    <definitions>
-        <definition>
-        <class_type>TRANSFORM_CLASS</class_type>
-
-        <class_name>Processor</class_name>
-
-        <class_source><![CDATA[
-import org.opensextant.phonetic.Phoneticizer;
-
-static double confThresh = 0.9;
-static Phoneticizer phoner = new Phoneticizer();
-
-public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException
-{
-	Object[] r = getRow();
-
-	if (r == null) {
-		setOutputDone();
-		return false;
-	}
-
-    r = createOutputRow(r, data.outputRowMeta.size());
-
-	// get the name
-	String name = get(Fields.In, "PLACE_NAME").getString(r);
-
-	// get the reduction algorithm to be used
-	String algo = getParameter("phoneticAlgorithm");
-
-	// phoneticize the name
-	String base = phoner.phoneticForm(name, algo);
-
-	// temp hack (add these to Phoneticizer ?)
-	base = base.replaceAll("Ã¸","o").replaceAll("Ã�".toLowerCase(),"d").replaceAll("ÃŸ","ss");
-
-	// prepare base name for tokenization
-	base = base.replaceAll("[-\\s]+"," ");
-
-	// get tokencount
-	Long tokenCount = new Long(base.split(" ").length);
-
-	get(Fields.Out, "tokenCount").setValue(r, tokenCount);
-	get(Fields.Out, "baseName").setValue(r, base);
-
-	putRow(data.outputRowMeta, r);
-
-	return true;
-}
-
-
-
-]]></class_source>
-        </definition>
-    </definitions>
-    <fields>
-        <field>
-        <field_name>baseName</field_name>
-
-        <field_type>String</field_type>
-
-        <field_length>-1</field_length>
-
-        <field_precision>-1</field_precision>
-
-        </field>
-        <field>
-        <field_name>tokenCount</field_name>
-
-        <field_type>Integer</field_type>
-
-        <field_length>-1</field_length>
-
-        <field_precision>-1</field_precision>
-
-        </field>
-    </fields><clear_result_fields>N</clear_result_fields>
-<info_steps></info_steps><target_steps></target_steps><usage_parameters><usage_parameter><parameter_tag>phoneticAlgorithm</parameter_tag>
-<parameter_value>Simple_Phonetic0SolrPlus</parameter_value>
-<parameter_description>The algorithm used to produce the reduced form of the names for matching purposes</parameter_description>
-</usage_parameter></usage_parameters>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>292</xloc>
-      <yloc>300</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1766,34 +1698,6 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>708</xloc>
       <yloc>173</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Negative Bias Only</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-<send_true_to/>
-<send_false_to/>
-    <compare>
-<condition>
- <negated>N</negated>
- <leftvalue>PLACE_NAME_BIAS</leftvalue>
- <function>&lt;</function>
- <rightvalue/>
- <value><name>constant</name><type>String</type><text>0.0</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
-    </compare>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>3218</xloc>
-      <yloc>434</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2405,6 +2309,68 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>2315</xloc>
       <yloc>301</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Negative Bias Check</name>
+    <type>UserDefinedJavaClass</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+
+    <definitions>
+        <definition>
+        <class_type>TRANSFORM_CLASS</class_type>
+
+        <class_name>Processor</class_name>
+
+        <class_source><![CDATA[public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException
+{
+	Object[] r = getRow();
+	if (r == null) {
+		setOutputDone();
+		return false;
+	}
+
+    if (first)
+    {
+        first = false;
+    }
+	
+	// create output row
+    r = createOutputRow(r, r.length);
+
+	String srchOnly = get(Fields.Out, "SEARCH_ONLY").getString(r);	
+
+	Double name_bias = get(Fields.In, "PLACE_NAME_BIAS").getNumber(r);
+
+	// name bias less than 0.0
+	if(name_bias < 0.0 ){
+		srchOnly ="T";
+	}
+
+	get(Fields.Out, "SEARCH_ONLY").setValue(r, srchOnly);
+
+	// Send the row on to the next step.
+    putRow(data.outputRowMeta, r);
+
+	return true;
+}
+]]></class_source>
+        </definition>
+    </definitions>
+    <fields>
+    </fields><clear_result_fields>N</clear_result_fields>
+<info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>3138</xloc>
+      <yloc>303</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -3110,407 +3076,6 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>3477</xloc>
       <yloc>493</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Negative Bias Check</name>
-    <type>UserDefinedJavaClass</type>
-    <description/>
-    <distribute>N</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-
-    <definitions>
-        <definition>
-        <class_type>TRANSFORM_CLASS</class_type>
-
-        <class_name>Processor</class_name>
-
-        <class_source><![CDATA[public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException
-{
-	Object[] r = getRow();
-	if (r == null) {
-		setOutputDone();
-		return false;
-	}
-
-    if (first)
-    {
-        first = false;
-    }
-	
-	// create output row
-    r = createOutputRow(r, r.length);
-
-	String srchOnly = get(Fields.Out, "SEARCH_ONLY").getString(r);	
-
-	Double name_bias = get(Fields.In, "PLACE_NAME_BIAS").getNumber(r);
-
-	// name bias less than 0.0
-	if(name_bias < 0.0 ){
-		srchOnly ="T";
-	}
-
-	get(Fields.Out, "SEARCH_ONLY").setValue(r, srchOnly);
-
-	// Send the row on to the next step.
-    putRow(data.outputRowMeta, r);
-
-	return true;
-}
-]]></class_source>
-        </definition>
-    </definitions>
-    <fields>
-    </fields><clear_result_fields>N</clear_result_fields>
-<info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>3138</xloc>
-      <yloc>303</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Negative Bias Log</name>
-    <type>TextFileOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <separator>	</separator>
-    <enclosure/>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding>UTF-8</encoding>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>N</create_parent_folder>
-    <file>
-      <name>${Internal.Transformation.Filename.Directory}&#47;Logs\NegativeBias.log</name>
-      <is_command>N</is_command>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>txt</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery>0</splitevery>
-    </file>
-    <fields>
-      <field>
-        <name>PLACE_ID</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>PLACE_NAME</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>PLACE_NAME_EXPANDED</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>LATITUDE</name>
-        <type>Number</type>
-        <format>#.#</format>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>LONGITUDE</name>
-        <type>Number</type>
-        <format>#.#</format>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>FEATURE_CLASS</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>FEATURE_CODE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>FIPS_COUNTRY_CODE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ISO2_COUNTRY_CODE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ISO3_COUNTRY_CODE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ADMIN_LEVEL_1</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ADMIN_LEVEL_2</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ADMIN_LEVEL_3</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ADMIN_LEVEL_4</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>ADMIN_LEVEL_5</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>SOURCE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>SOURCE_FEATURE_ID</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>SOURCE_NAME_ID</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>NAME_TYPE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>NAME_TYPE_SYSTEM</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>SEARCH_ONLY</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>SCRIPT</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>PLACE_NAME_BIAS</name>
-        <type>Number</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>namePattern</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-    </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>3217</xloc>
-      <yloc>538</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

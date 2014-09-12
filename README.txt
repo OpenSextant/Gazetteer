@@ -18,7 +18,7 @@
  		c) set the "NGA_date" and "USGS_date" parameters (see build.properties for details)
  		d) (optional) modify the "kettle.options.jvm" setting to increase/reduce memory used in gazetteer processing. Setting this below about 1G will cause excessive processing times.
  		
- 	3) do the build: ant
+ 	3) do the build: ant publish-local
  	
  	 This will fetch the data from the two websites (NGA and USGS), unpack and rename the files and place them in their respective
  	 subdirectories of Gazetteer/GazetteerETL/GeoData/. It will then run the Kettle script (BuildMergedGazetteer.kjb) which will clean, transform 
