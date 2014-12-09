@@ -82,7 +82,7 @@
 		<!--get src="ftp://ftp.nga.mil/pub2/gns_data/${NGA_basename}.zip" dest="${basedir}/GazetteerETL/GeoData/NGA" /-->
 		<get src="http://earth-info.nga.mil/gns/html/${NGA_basename}.zip" dest="${basedir}/GazetteerETL/GeoData/NGA" />
 		<unzip src="${basedir}/GazetteerETL/GeoData/NGA/${NGA_basename}.zip" dest="${basedir}/GazetteerETL/GeoData/NGA" />
-		<move file="${basedir}/GazetteerETL/GeoData/NGA/${NGA_basename}.txt" tofile="${basedir}/GazetteerETL/GeoData/NGA/geonames_dd_dms_date.txt" />
+		<!--move file="${basedir}/GazetteerETL/GeoData/NGA/${NGA_basename}.txt" tofile="${basedir}/GazetteerETL/GeoData/NGA/geonames_dd_dms_date.txt" /-->
 	</target>
 
 	<target name="data.usgs">

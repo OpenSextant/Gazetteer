@@ -1837,11 +1837,11 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 	// set the placeID
 	get(Fields.Out, "PLACE_ID").setValue(r, placeID);
 
-	String name = get(Fields.In, "FEATURE_NAME").getString(r);
+	String name = get(Fields.In, "FEATURE_NAME").getString(r).replaceAll("[\n\r]","");
 	String variant = get(Fields.In, "FEATURE_NAME_VARIANT").getString(r);
 
 	if(variant != null){
-		name = name + "|" + variant;
+		name = name + "|" + variant.replaceAll("[\n\r]","");
 	}
 
 

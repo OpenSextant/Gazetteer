@@ -2196,7 +2196,7 @@ public static boolean scriptsOK(Set scripts){
 	String error = "";
 
 	// get the place name
-    String name = get(Fields.In, "PLACE_NAME").getString(r);
+    String name = get(Fields.In, "baseName").getString(r);
 	String nameType = get(Fields.In, "NAME_TYPE").getString(r);
 	String script = get(Fields.In, "SCRIPT").getString(r);
 

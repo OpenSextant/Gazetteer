@@ -768,7 +768,7 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <filename>${Internal.Transformation.Filename.Directory}\GeoData\NGA\geonames_dd_dms_date.txt</filename>
+    <filename>${Internal.Transformation.Filename.Directory}\GeoData\NGA\Countries.txt</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
