@@ -782,7 +782,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 	if(name_type.equals("name")){
 	   base = phoner.phoneticForm(name, algo);
 	}else{
- 		base = name.toLowerCase();
+ 		base = name.toLowerCase().replaceAll("\\.","");
 	}
 
 	// prepare base name for tokenization
@@ -1787,7 +1787,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 	}else{
 
 		// check for valid feature code combo 
-		if( mappedCombo == null  || mappedCombo.equals("UNMATCHED") || !mappedCombo.equals(featCombo)) {
+		if( (mappedCombo == null  || mappedCombo.equals("UNMATCHED") || !mappedCombo.equals(featCombo)) && !featCombo.equals("L-INSM") ) {
 		error = error + "," + "BadFeatureClassCodeOrMismatch";
 		residue = featCombo;
 
