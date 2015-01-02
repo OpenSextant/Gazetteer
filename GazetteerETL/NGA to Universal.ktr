@@ -94,8 +94,8 @@
   <notepads>
     <notepad>
       <note>Convert Geonames to &quot;universal&quot; model</note>
-      <xloc>456</xloc>
-      <yloc>507</yloc>
+      <xloc>472</xloc>
+      <yloc>506</yloc>
       <width>205</width>
       <heigth>22</heigth>
       <fontname>Microsoft Sans Serif</fontname>
@@ -115,7 +115,7 @@
     </notepad>
   </notepads>
   <order>
-  <hop> <from>Expand on NameList</from><to>Expand on CountryList</to><enabled>Y</enabled> </hop>  <hop> <from>NGA Geonames</from><to>Rework fields</to><enabled>Y</enabled> </hop>  <hop> <from>Rework fields</from><to>Expand on NameList</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Fields</from><to>Rename Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Country Code Lookup</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>Expand on CountryList</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>Map FIPS to ISO</from><to>Remove Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Rename Fields</from><to>Add Source Field</to><enabled>Y</enabled> </hop>  <hop> <from>Add Source Field</from><to>Set name type</to><enabled>Y</enabled> </hop>  <hop> <from>Set name type</from><to>Clean NGA Output</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Expand on NameList</from><to>Expand on CountryList</to><enabled>Y</enabled> </hop>  <hop> <from>NGA Geonames</from><to>Rework fields</to><enabled>Y</enabled> </hop>  <hop> <from>Rework fields</from><to>Expand on NameList</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Fields</from><to>Rename Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Country Code Lookup</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>Map FIPS to ISO</from><to>Remove Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Rename Fields</from><to>Add Source Field</to><enabled>Y</enabled> </hop>  <hop> <from>Add Source Field</from><to>Set name type</to><enabled>Y</enabled> </hop>  <hop> <from>Set name type</from><to>Clean NGA Output</to><enabled>Y</enabled> </hop>  <hop> <from>Expand on CountryList</from><to>Remove Bad Admin1s</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Bad Admin1s</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  </order>
   <step>
     <name>Add Source Field</name>
     <type>Constant</type>
@@ -207,8 +207,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>898</xloc>
-      <yloc>403</yloc>
+      <xloc>1041</xloc>
+      <yloc>401</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -510,8 +510,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1129</xloc>
-      <yloc>404</yloc>
+      <xloc>1272</xloc>
+      <yloc>402</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -661,8 +661,8 @@
     <spreadsheet_type>POI</spreadsheet_type>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>526</xloc>
-      <yloc>216</yloc>
+      <xloc>669</xloc>
+      <yloc>214</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -752,8 +752,8 @@
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>526</xloc>
-      <yloc>398</yloc>
+      <xloc>669</xloc>
+      <yloc>396</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1148,8 +1148,8 @@
       </remove>      <remove>        <name>NAMELIST</name>
       </remove>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>665</xloc>
-      <yloc>399</yloc>
+      <xloc>808</xloc>
+      <yloc>397</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1191,8 +1191,8 @@
       </field>        <select_unspecified>Y</select_unspecified>
     </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>778</xloc>
-      <yloc>400</yloc>
+      <xloc>921</xloc>
+      <yloc>398</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1463,8 +1463,74 @@ public String mergeCC(String cc1, String cc2){
     </fields><clear_result_fields>N</clear_result_fields>
 <info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1013</xloc>
-      <yloc>404</yloc>
+      <xloc>1156</xloc>
+      <yloc>402</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Remove Bad Admin1s</name>
+    <type>UserDefinedJavaClass</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+
+    <definitions>
+        <definition>
+        <class_type>TRANSFORM_CLASS</class_type>
+
+        <class_name>Processor</class_name>
+
+        <class_source><![CDATA[
+import java.util.*;
+
+
+// this step
+// 1) removes admin1 ids which are inconsistent with the assigned country code
+
+
+public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException
+{
+	Object[] r = getRow();
+	if (r == null) {
+		setOutputDone();
+		return false;
+	}
+
+	// get the country code and admin1 code
+	String cc = get(Fields.In, "FIPS_COUNTRY_CODE").getString(r);
+	String admin1ID = get(Fields.In, "ADMIN_LEVEL_1").getString(r);
+
+	// remove inconsistent admin1 codes
+	if(!admin1ID.startsWith(cc)){
+		admin1ID="";
+	}
+
+
+    // Set the new ADMIN1ID output field
+    get(Fields.Out, "ADMIN_LEVEL_1").setValue(r, admin1ID);
+
+
+	// Send the row on to the next step.
+    putRow(data.outputRowMeta, r);
+
+	return true;
+}
+
+]]></class_source>
+        </definition>
+    </definitions>
+    <fields>
+    </fields><clear_result_fields>N</clear_result_fields>
+<info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>541</xloc>
+      <yloc>397</yloc>
       <draw>Y</draw>
       </GUI>
     </step>

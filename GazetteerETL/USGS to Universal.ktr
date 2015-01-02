@@ -178,7 +178,7 @@
     </notepad>
   </notepads>
   <order>
-  <hop> <from>Govt Units Sorted</from><to>AddGovtUnitInfo</to><enabled>Y</enabled> </hop>  <hop> <from>National File Sorted</from><to>AddGovtUnitInfo</to><enabled>Y</enabled> </hop>  <hop> <from>Name Variants</from><to>OnlyUnofficialNames</to><enabled>Y</enabled> </hop>  <hop> <from>AddGovtUnitInfo</from><to>AddVariantNames</to><enabled>Y</enabled> </hop>  <hop> <from>Name variants Sorted</from><to>AddVariantNames</to><enabled>Y</enabled> </hop>  <hop> <from>OnlyUnofficialNames</from><to>Rename Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Rename Fields</from><to>Name variants Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Unused fields GU</from><to>Govt Units Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>National File</from><to>Remove Unused fields National</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Unused fields National</from><to>National File Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>MAP Feature Code&#47;Class</to><enabled>Y</enabled> </hop>  <hop> <from>GNIS to Universal Feature Code&#47;Class</from><to>MAP Feature Code&#47;Class</to><enabled>Y</enabled> </hop>  <hop> <from>Country Code Lookup</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>MAP Feature Code&#47;Class</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>Map FIPS to ISO</from><to>Split field to rows</to><enabled>Y</enabled> </hop>  <hop> <from>CountryAdjusts</from><to>AdjustCountryCodesToFIPS</to><enabled>Y</enabled> </hop>  <hop> <from>ReplaceAdjustedCountryCode</from><to>Remove Unused fields GU</to><enabled>Y</enabled> </hop>  <hop> <from>AdjustCountryCodesToFIPS</from><to>ReplaceAdjustedCountryCode</to><enabled>Y</enabled> </hop>  <hop> <from>Govt Units</from><to>AdjustCountryCodesToFIPS</to><enabled>Y</enabled> </hop>  <hop> <from>AddVariantNames</from><to>Correct CC for US Possessions</to><enabled>Y</enabled> </hop>  <hop> <from>Correct CC for US Possessions</from><to>New Record from variant</to><enabled>Y</enabled> </hop>  <hop> <from>New Record from variant</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Split field to rows</from><to>Add Constant Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Add Constant Fields</from><to>Rename to Universal</to><enabled>Y</enabled> </hop>  <hop> <from>Rename to Universal</from><to>Set name type</to><enabled>Y</enabled> </hop>  <hop> <from>Set name type</from><to>Clean USGS Output</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Govt Units Sorted</from><to>AddGovtUnitInfo</to><enabled>Y</enabled> </hop>  <hop> <from>National File Sorted</from><to>AddGovtUnitInfo</to><enabled>Y</enabled> </hop>  <hop> <from>Name Variants</from><to>OnlyUnofficialNames</to><enabled>Y</enabled> </hop>  <hop> <from>AddGovtUnitInfo</from><to>AddVariantNames</to><enabled>Y</enabled> </hop>  <hop> <from>Name variants Sorted</from><to>AddVariantNames</to><enabled>Y</enabled> </hop>  <hop> <from>OnlyUnofficialNames</from><to>Rename Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Rename Fields</from><to>Name variants Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Unused fields GU</from><to>Govt Units Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>National File</from><to>Remove Unused fields National</to><enabled>Y</enabled> </hop>  <hop> <from>Remove Unused fields National</from><to>National File Sorted</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>MAP Feature Code&#47;Class</to><enabled>Y</enabled> </hop>  <hop> <from>GNIS to Universal Feature Code&#47;Class</from><to>MAP Feature Code&#47;Class</to><enabled>Y</enabled> </hop>  <hop> <from>Country Code Lookup</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>MAP Feature Code&#47;Class</from><to>Map FIPS to ISO</to><enabled>Y</enabled> </hop>  <hop> <from>Map FIPS to ISO</from><to>Split field to rows</to><enabled>Y</enabled> </hop>  <hop> <from>AddVariantNames</from><to>Correct CC for US Possessions</to><enabled>Y</enabled> </hop>  <hop> <from>Correct CC for US Possessions</from><to>New Record from variant</to><enabled>Y</enabled> </hop>  <hop> <from>New Record from variant</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Split field to rows</from><to>Add Constant Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Add Constant Fields</from><to>Rename to Universal</to><enabled>Y</enabled> </hop>  <hop> <from>Rename to Universal</from><to>Set name type</to><enabled>Y</enabled> </hop>  <hop> <from>Set name type</from><to>Clean USGS Output</to><enabled>Y</enabled> </hop>  <hop> <from>Govt Units</from><to>Remove Unused fields GU</to><enabled>Y</enabled> </hop>  </order>
   <step>
     <name>Add Constant Fields</name>
     <type>Constant</type>
@@ -259,8 +259,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1478</xloc>
-      <yloc>245</yloc>
+      <xloc>1655</xloc>
+      <yloc>251</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -315,41 +315,6 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>602</xloc>
       <yloc>250</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>AdjustCountryCodesToFIPS</name>
-    <type>StreamLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <from>CountryAdjusts</from>
-    <input_sorted>N</input_sorted>
-    <preserve_memory>Y</preserve_memory>
-    <sorted_list>N</sorted_list>
-    <integer_pair>N</integer_pair>
-    <lookup>
-      <key>
-        <name>FEATURE_ID</name>
-        <field>ADJUST_FEATURE_ID</field>
-      </key>
-      <value>
-        <name>REPLACE_COUNTRY_ALPHA</name>
-        <rename>REPLACE_COUNTRY_ALPHA</rename>
-        <default>US</default>
-        <type>String</type>
-      </value>
-    </lookup>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>137</xloc>
-      <yloc>275</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -651,8 +616,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1879</xloc>
-      <yloc>241</yloc>
+      <xloc>2056</xloc>
+      <yloc>247</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -786,8 +751,8 @@
     </fields><clear_result_fields>N</clear_result_fields>
 <info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>697</xloc>
-      <yloc>322</yloc>
+      <xloc>768</xloc>
+      <yloc>253</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -937,111 +902,8 @@
     <spreadsheet_type>POI</spreadsheet_type>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1211</xloc>
-      <yloc>82</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>CountryAdjusts</name>
-    <type>ExcelInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <header>Y</header>
-    <noempty>Y</noempty>
-    <stoponempty>N</stoponempty>
-    <filefield/>
-    <sheetfield/>
-    <sheetrownumfield/>
-    <rownumfield/>
-    <sheetfield/>
-    <filefield/>
-    <limit>0</limit>
-    <encoding>UTF-8</encoding>
-    <add_to_result_filenames>Y</add_to_result_filenames>
-    <accept_filenames>N</accept_filenames>
-    <accept_field/>
-    <accept_stepname/>
-    <file>
-      <name>${Internal.Transformation.Filename.Directory}\Resources\USGSCountryAdjusts.xlsx</name>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-    </file>
-    <fields>
-      <field>
-        <name>ADJUST_FEATURE_ID</name>
-        <type>Integer</type>
-        <length>15</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>REPLACE_COUNTRY_ALPHA</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>FEATURE_NAME</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-    </fields>
-    <sheets>
-      <sheet>
-        <name>Sheet1</name>
-        <startrow>0</startrow>
-        <startcol>0</startcol>
-        </sheet>
-    </sheets>
-    <strict_types>Y</strict_types>
-    <error_ignored>N</error_ignored>
-    <error_line_skipped>N</error_line_skipped>
-    <bad_line_files_destination_directory/>
-    <bad_line_files_extension>warning</bad_line_files_extension>
-    <error_line_files_destination_directory/>
-    <error_line_files_extension>error</error_line_files_extension>
-    <line_number_files_destination_directory/>
-    <line_number_files_extension>line</line_number_files_extension>
-    <shortFileFieldName/>
-    <pathFieldName/>
-    <hiddenFieldName/>
-    <lastModificationTimeFieldName/>
-    <uriNameFieldName/>
-    <rootUriNameFieldName/>
-    <extensionFieldName/>
-    <sizeFieldName/>
-    <spreadsheet_type>POI</spreadsheet_type>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>144</xloc>
-      <yloc>170</yloc>
+      <xloc>1424</xloc>
+      <yloc>83</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1143,8 +1005,8 @@
     <spreadsheet_type>POI</spreadsheet_type>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1056</xloc>
-      <yloc>79</yloc>
+      <xloc>1233</xloc>
+      <yloc>84</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1318,8 +1180,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>499</xloc>
-      <yloc>239</yloc>
+      <xloc>382</xloc>
+      <yloc>214</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1359,8 +1221,8 @@
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1053</xloc>
-      <yloc>246</yloc>
+      <xloc>1230</xloc>
+      <yloc>251</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1400,8 +1262,8 @@
     </lookup>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1211</xloc>
-      <yloc>246</yloc>
+      <xloc>1428</xloc>
+      <yloc>251</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1498,8 +1360,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>350</xloc>
-      <yloc>451</yloc>
+      <xloc>424</xloc>
+      <yloc>450</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2017,8 +1879,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </fields><clear_result_fields>N</clear_result_fields>
 <info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>759</xloc>
-      <yloc>246</yloc>
+      <xloc>951</xloc>
+      <yloc>253</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2045,7 +1907,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>130</xloc>
+      <xloc>163</xloc>
       <yloc>449</yloc>
       <draw>Y</draw>
       </GUI>
@@ -2069,7 +1931,6 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       </remove>      <remove>        <name>STATE_NAME</name>
       </remove>      <remove>        <name>COUNTRY_NAME</name>
       </remove>      <remove>        <name>FEATURE_NAME</name>
-      </remove>      <remove>        <name>REPLACE_COUNTRY_ALPHA</name>
       </remove>      <meta>        <name>COUNTRY_ALPHA</name>
         <rename>COUNTRY_ALPHA</rename>
         <type>String</type>
@@ -2084,8 +1945,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <storage_type/>
       </meta>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>415</xloc>
-      <yloc>279</yloc>
+      <xloc>212</xloc>
+      <yloc>275</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2116,8 +1977,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       </remove>      <remove>        <name>DATE_EDITED</name>
       </remove>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>205</xloc>
-      <yloc>43</yloc>
+      <xloc>182</xloc>
+      <yloc>42</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2148,8 +2009,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <remove>        <name>FEATURE_NAME_OFFICIAL</name>
       </remove>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>230</xloc>
-      <yloc>450</yloc>
+      <xloc>289</xloc>
+      <yloc>449</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2248,32 +2109,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <remove>        <name>NAMELIST</name>
       </remove>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1618</xloc>
-      <yloc>245</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>ReplaceAdjustedCountryCode</name>
-    <type>SetValueField</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <fields>
-      <field>
-        <name>COUNTRY_ALPHA</name>
-        <replaceby>REPLACE_COUNTRY_ALPHA</replaceby>
-        </field>
-      </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>286</xloc>
-      <yloc>275</yloc>
+      <xloc>1795</xloc>
+      <yloc>251</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2299,8 +2136,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       </remove>      <remove>        <name>FEATURE_CLASS</name>
       </remove>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>941</xloc>
-      <yloc>247</yloc>
+      <xloc>1104</xloc>
+      <yloc>252</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2381,8 +2218,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </fields><clear_result_fields>N</clear_result_fields>
 <info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1749</xloc>
-      <yloc>245</yloc>
+      <xloc>1926</xloc>
+      <yloc>251</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2406,8 +2243,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
    <delimiter_is_regex>N</delimiter_is_regex>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1362</xloc>
-      <yloc>245</yloc>
+      <xloc>1539</xloc>
+      <yloc>251</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
