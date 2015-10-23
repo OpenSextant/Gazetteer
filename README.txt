@@ -11,7 +11,6 @@
  		 Download and unzip anywhere handy.
  		(Developed/tested with versions "4.4.0-stable" )
  		NOTE: Kettle  "5.0.1.A-stable" introduced an intermittent issue reading the Excel files used for reference data. Avoid for now.
- 		Also 6.0.x introduced a bug for the User Defined Java step. Likewise avoid for now 
  		 
  	2) copy or rename build.local.properties to build.properties and edit:
  	 	a) set the "kettle.home" parameter to where you installed Kettle from step #1 above
