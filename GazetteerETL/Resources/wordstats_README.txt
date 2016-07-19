@@ -11,7 +11,7 @@ Total - the count of how many times the Ngram appeared in the corpus (in any cas
 Decision - the decision of the majority case form ( most often occurring case form): [upper,lower,initial,mixed] 
 CaseConfidence - the confidence of the case decision (maximum count/total count). Value 0.0->1.0
 ProperConfidence - the confidence that this could be a proper noun (  (inital count+mixed count)/total count). Value 0.0->1.0
-AbbreviationConfidence - the confidence that this could be a proper noun (  (upper count)/total count). Value 0.0->1.0
+AbbreviationConfidence - the confidence that this could be an abbreviation (  (upper count)/total count). Value 0.0->1.0
 
  
 The data contained in the wordstats file is derived from the Google Books Ngram data set (see http://books.google.com/ngrams for details), specifically the 1-grams of the "English" collection (20090715 version) available at  http://storage.googleapis.com/books/ngrams/books/datasetsv2.html.

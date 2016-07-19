@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<project name="OpenSextant-Gazetteer" default="build" xmlns:ivy="antlib:org.apache.ivy.ant">
+<project name="OpenSextant-Gazetteer" default="zip" xmlns:ivy="antlib:org.apache.ivy.ant">
 
 	<!-- import properties -->
 	<property file="${basedir}/build.properties" />
@@ -34,7 +34,7 @@
 		</or>
 	</condition>
 
-	<property name="publish.gaz.name" value="opensextant-gazetteer.zip" />
+	<property name="publish.gaz.name" value="opensextant-gazetteer-${DSTAMP}.zip" />
 	
 	<!--====================== Targets ============================-->
 
@@ -151,27 +151,5 @@
 		</zip>
 	</target>
 
-
-	<!-- Publish the opensextant gazetteer data to the local Ivy repo-->
-	<target name="publish-local" depends="zip">
-		<ivy:resolve />
-		<ivy:publish resolver="local" overwrite="true" forcedeliver="true" pubrevision="${version}.${DSTAMP}">
-			<artifacts pattern="${build.dir}/[artifact].[ext]" />
-		</ivy:publish>
-	</target>
-	
-	
-	<!-- post the zipped gazetteer data -->
-	<target name="post" depends="">
-		   <copy todir="${build.dir}/temp">
-		      <mappedresources>
-		      	<fileset file="${build.dir}/${publish.gaz.name}" />
-		        <globmapper from="*" to="gazdata-${DSTAMP}.zip"/>
-		      </mappedresources>
-		    </copy>
-		<ftp server="${post.site}" remotedir="${post.dir}" userid="${post.user}" password="${post.password}">
-			<fileset file="${build.dir}/temp/gazdata-${DSTAMP}.zip" />
-		</ftp>
-	</target>
 
 </project>

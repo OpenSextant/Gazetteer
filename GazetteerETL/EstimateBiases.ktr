@@ -1,38 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>Estimate Biases (New Model)</name>
+    <name>Estimate Biases &#x28;New Model&#x29;</name>
     <description/>
-    <extended_description>&#47;** 
- Copyright 2009-2013 The MITRE Corporation.
-
-   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http:&#47;&#47;www.apache.org&#47;licenses&#47;LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
-
- * **************************************************************************
- *                          NOTICE
- * This software was produced for the U. S. Government under Contract No.
- * W15P7T-12-C-F600, and is subject to the Rights in Noncommercial Computer
- * Software and Noncommercial Computer Software Documentation Clause
- * 252.227-7014 (JUN 1995)
- *
- * (c) 2012 The MITRE Corporation. All Rights Reserved.
- * **************************************************************************
-**&#47;</extended_description>
+    <extended_description>&#x2f;&#x2a;&#x2a; &#xa; Copyright 2009-2013 The MITRE Corporation.&#xa;&#xa;   Licensed under the Apache License, Version 2.0 &#x28;the &#x22;License&#x22;&#x29;&#x3b;&#xa;   you may not use this file except in compliance with the License.&#xa;   You may obtain a copy of the License at&#xa;&#xa;       http&#x3a;&#x2f;&#x2f;www.apache.org&#x2f;licenses&#x2f;LICENSE-2.0&#xa;&#xa;   Unless required by applicable law or agreed to in writing, software&#xa;   distributed under the License is distributed on an &#x22;AS IS&#x22; BASIS,&#xa;   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xa;   See the License for the specific language governing permissions and&#xa;   limitations under the License.&#xa;&#xa;&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xa; &#x2a;                          NOTICE&#xa; &#x2a; This software was produced for the U. S. Government under Contract No.&#xa; &#x2a; W15P7T-12-C-F600, and is subject to the Rights in Noncommercial Computer&#xa; &#x2a; Software and Noncommercial Computer Software Documentation Clause&#xa; &#x2a; 252.227-7014 &#x28;JUN 1995&#x29;&#xa; &#x2a;&#xa; &#x2a; &#x28;c&#x29; 2012 The MITRE Corporation. All Rights Reserved.&#xa; &#x2a; &#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#x2a;&#xa;&#x2a;&#x2a;&#x2f;</extended_description>
     <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>&#47;</directory>
+    <directory>&#x2f;</directory>
     <parameters>
     </parameters>
     <log>
@@ -42,7 +17,7 @@
 <size_limit_lines/>
 <interval/>
 <timeout_days/>
-<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
 <perf-log-table><connection/>
 <schema/>
 <table/>
@@ -59,6 +34,11 @@
 <table/>
 <timeout_days/>
 <field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
     </log>
     <maxdate>
       <connection/>
@@ -87,18 +67,19 @@
     <clusterschemas>
     </clusterschemas>
   <created_user>-</created_user>
-  <created_date>2013&#47;01&#47;28 08:50:28.001</created_date>
+  <created_date>2013&#x2f;01&#x2f;28 08&#x3a;50&#x3a;28.001</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2013&#47;01&#47;28 08:50:28.001</modified_date>
+  <modified_date>2013&#x2f;01&#x2f;28 08&#x3a;50&#x3a;28.001</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
+    <is_key_private>N</is_key_private>
   </info>
   <notepads>
     <notepad>
-      <note>Token level analysis:
-look at case,vocabulary and suffix</note>
+      <note>Token level analysis&#x3a;&#xa;look at case,vocabulary and suffix</note>
       <xloc>1430</xloc>
       <yloc>419</yloc>
       <width>175</width>
-      <heigth>35</heigth>
+      <heigth>36</heigth>
       <fontname>Microsoft Sans Serif</fontname>
       <fontsize>8</fontsize>
       <fontbold>N</fontbold>
@@ -116,12 +97,45 @@ look at case,vocabulary and suffix</note>
     </notepad>
   </notepads>
   <order>
-  <hop> <from>Tokenize BaseName</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Build Sequences</from><to>Discard internal records</to><enabled>Y</enabled> </hop>  <hop> <from>WordStat Input</from><to>Process Case Info</to><enabled>Y</enabled> </hop>  <hop> <from>Process Case Info</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Vocab Input</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>PriorWeightsFromMining</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>Discard internal records</from><to>CreateNamePattern</to><enabled>Y</enabled> </hop>  <hop> <from>PatternWeights Input</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>CreateNamePattern</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>MinedWeightLookup</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>  <hop> <from>Clean gazetteers In</from><to>RecordID Sequence</to><enabled>Y</enabled> </hop>  <hop> <from>Suffix Input</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>  <hop> <from>Vocab Lookup</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>  <hop> <from>EstimateFromSuffix</from><to>Build Sequences</to><enabled>Y</enabled> </hop>  <hop> <from>Country Weight input</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>  <hop> <from>FeatureType Weight Input</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>  <hop> <from>ID Bias from Feature Type</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>  <hop> <from>ID Bias from well known</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>  <hop> <from>ID Biase from Country</from><to>Calculate Total ID bias</to><enabled>Y</enabled> </hop>  <hop> <from>Is well known</from><to>ID Bias from well known</to><enabled>Y</enabled> </hop>  <hop> <from>Well Known Places Weight input</from><to>Is well known</to><enabled>Y</enabled> </hop>  <hop> <from>Calculate Total ID bias</from><to>Tokenize BaseName</to><enabled>Y</enabled> </hop>  <hop> <from>PatternWeightLookup</from><to>Adjustments</to><enabled>Y</enabled> </hop>  <hop> <from>Case Stats Lookup</from><to>Adjust for unseen&#47;common tokens</to><enabled>Y</enabled> </hop>  <hop> <from>Adjust for unseen&#47;common tokens</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>  <hop> <from>Adjustments</from><to>Set filecategory</to><enabled>Y</enabled> </hop>  <hop> <from>Set filecategory</from><to>Estimate PLACE_NAME_BIAS</to><enabled>Y</enabled> </hop>  <hop> <from>Basic Category only</from><to>SMALL Merged and Biased out</to><enabled>Y</enabled> </hop>  <hop> <from>Estimate PLACE_NAME_BIAS</from><to>Negative Bias Check</to><enabled>Y</enabled> </hop>  <hop> <from>Negative Bias Check</from><to>Merged and Biased out</to><enabled>Y</enabled> </hop>  <hop> <from>Negative Bias Check</from><to>Basic Category only</to><enabled>Y</enabled> </hop>  <hop> <from>RecordID Sequence</from><to>Is well known</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Tokenize BaseName</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>Build Sequences</from><to>Discard internal records</to><enabled>Y</enabled> </hop>
+  <hop> <from>WordStat Input</from><to>Process Case Info</to><enabled>Y</enabled> </hop>
+  <hop> <from>Process Case Info</from><to>Case Stats Lookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>Vocab Input</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>PriorWeightsFromMining</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>Discard internal records</from><to>CreateNamePattern</to><enabled>Y</enabled> </hop>
+  <hop> <from>PatternWeights Input</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>CreateNamePattern</from><to>MinedWeightLookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>MinedWeightLookup</from><to>PatternWeightLookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>Clean gazetteers In</from><to>RecordID Sequence</to><enabled>Y</enabled> </hop>
+  <hop> <from>Suffix Input</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>
+  <hop> <from>EstimateFromSuffix</from><to>Build Sequences</to><enabled>Y</enabled> </hop>
+  <hop> <from>Country Weight input</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>
+  <hop> <from>FeatureType Weight Input</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>
+  <hop> <from>ID Bias from Feature Type</from><to>ID Biase from Country</to><enabled>Y</enabled> </hop>
+  <hop> <from>ID Bias from well known</from><to>ID Bias from Feature Type</to><enabled>Y</enabled> </hop>
+  <hop> <from>ID Biase from Country</from><to>Calculate Total ID bias</to><enabled>Y</enabled> </hop>
+  <hop> <from>Is well known</from><to>ID Bias from well known</to><enabled>Y</enabled> </hop>
+  <hop> <from>Well Known Places Weight input</from><to>Is well known</to><enabled>Y</enabled> </hop>
+  <hop> <from>Calculate Total ID bias</from><to>Tokenize BaseName</to><enabled>Y</enabled> </hop>
+  <hop> <from>PatternWeightLookup</from><to>Adjustments</to><enabled>Y</enabled> </hop>
+  <hop> <from>Case Stats Lookup</from><to>Adjust for unseen&#x2f;common tokens</to><enabled>Y</enabled> </hop>
+  <hop> <from>Adjust for unseen&#x2f;common tokens</from><to>Vocab Lookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>Adjustments</from><to>Set filecategory</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set filecategory</from><to>Estimate PLACE_NAME_BIAS</to><enabled>Y</enabled> </hop>
+  <hop> <from>Basic Category only</from><to>SMALL Merged and Biased out</to><enabled>Y</enabled> </hop>
+  <hop> <from>Estimate PLACE_NAME_BIAS</from><to>Negative Bias Check</to><enabled>Y</enabled> </hop>
+  <hop> <from>Negative Bias Check</from><to>Merged and Biased out</to><enabled>Y</enabled> </hop>
+  <hop> <from>Negative Bias Check</from><to>Basic Category only</to><enabled>Y</enabled> </hop>
+  <hop> <from>RecordID Sequence</from><to>Is well known</to><enabled>Y</enabled> </hop>
+  <hop> <from>Vocab Lookup</from><to>EstimateFromSuffix</to><enabled>Y</enabled> </hop>
+  </order>
   <step>
-    <name>Adjust for unseen&#47;common tokens</name>
+    <name>Adjust for unseen&#x2f;common tokens</name>
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -211,6 +225,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -340,6 +355,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -351,7 +367,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 <condition>
  <negated>N</negated>
  <leftvalue>SplitCategory</leftvalue>
- <function>=</function>
+ <function>&#x3d;</function>
  <rightvalue/>
  <value><name>constant</name><type>String</type><text>Basic</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
     </compare>
@@ -368,6 +384,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>GroupBy</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -376,7 +393,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <all_rows>Y</all_rows>
       <ignore_aggregate>N</ignore_aggregate>
       <field_ignore/>
-      <directory>%%java.io.tmpdir%%</directory>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
       <prefix>grp</prefix>
       <add_linenr>N</add_linenr>
       <linenr_fieldname>lineNum</linenr_fieldname>
@@ -437,6 +454,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -522,6 +540,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>StreamLookup</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -569,6 +588,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>TextFileInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -601,7 +621,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <encoding>UTF-8</encoding>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\GeoData\Merged\clean.txt</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;GeoData&#x5c;Merged&#x5c;clean.txt</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -616,7 +636,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>PLACE_ID</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -631,7 +651,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>PLACE_NAME</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -646,7 +666,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>PLACE_NAME_EXPANDED</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -660,8 +680,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>LATITUDE</name>
         <type>Number</type>
-        <format>#.#</format>
-        <currency>$</currency>
+        <format>&#x23;.&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -675,8 +695,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>LONGITUDE</name>
         <type>Number</type>
-        <format>#.#</format>
-        <currency>$</currency>
+        <format>&#x23;.&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -691,7 +711,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>FEATURE_CLASS</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -706,7 +726,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>FEATURE_CODE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -721,7 +741,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>FIPS_COUNTRY_CODE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -736,7 +756,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>ISO2_COUNTRY_CODE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -751,7 +771,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>ISO3_COUNTRY_CODE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -766,7 +786,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>ADMIN_LEVEL_1</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -781,7 +801,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>ADMIN_LEVEL_2</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -796,7 +816,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>ADMIN_LEVEL_3</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -811,7 +831,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>ADMIN_LEVEL_4</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -826,7 +846,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>ADMIN_LEVEL_5</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -841,7 +861,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>SOURCE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -856,7 +876,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>SOURCE_FEATURE_ID</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -871,7 +891,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>SOURCE_NAME_ID</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -886,7 +906,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>SCRIPT</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -1011,6 +1031,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>ExcelInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1032,7 +1053,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\Resources\UniversalGazetterModel.xlsx</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;Resources&#x5c;UniversalGazetterModel.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -1198,6 +1219,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1343,6 +1365,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1354,9 +1377,9 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 <condition>
  <negated>N</negated>
  <leftvalue>tokenNum</leftvalue>
- <function>=</function>
+ <function>&#x3d;</function>
  <rightvalue/>
- <value><name>constant</name><type>Integer</type><text>1</text><length>-1</length><precision>0</precision><isnull>N</isnull><mask>#;-#</mask></value> </condition>
+ <value><name>constant</name><type>Integer</type><text>1</text><length>-1</length><precision>0</precision><isnull>N</isnull><mask>&#x23;&#x3b;-&#x23;</mask></value> </condition>
     </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
@@ -1371,6 +1394,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1459,6 +1483,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1485,16 +1510,17 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     if (first){
         first = false;
 		RowSet infoStream = findInfoRowSet("affixes");
-		
+
 		Object[] infoRow = null;
-		
+		FieldHelper affixField = get(Fields.In, "PLACE_ID");
+
 		while((infoRow = getRowFrom(infoStream)) != null){
-			String regex = get(Fields.Info, "Affix").getString(infoRow);
+			String regex = affixField.getString(infoRow);
 			tmpPattern = regex + "|" + tmpPattern; 
 		}
 
 		tmpPattern = tmpPattern.replaceAll("\\|$","");
-
+		logBasic(tmpPattern);
 
 	    matchPattern = Pattern.compile(tmpPattern);
 
@@ -1513,6 +1539,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 
 	String cat = "Word";
 	String token = get(Fields.In, "token").getString(r);
+
 
 	if(matchPattern.matcher(token).matches()){
 		cat = "PLACE";
@@ -1556,6 +1583,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>ExcelInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1577,7 +1605,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\Resources\UniversalGazetterModel.xlsx</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;Resources&#x5c;UniversalGazetterModel.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -1707,6 +1735,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>StreamLookup</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1748,6 +1777,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1828,6 +1858,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>StreamLookup</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1863,6 +1894,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>StreamLookup</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1920,6 +1952,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1939,7 +1972,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\GeoData\Merged\MergedGazetteer</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;GeoData&#x5c;Merged&#x5c;MergedGazetteer</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -2008,7 +2041,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>LATITUDE</name>
         <type>Number</type>
-        <format>0.#####</format>
+        <format>0.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -2020,7 +2053,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>LONGITUDE</name>
         <type>Number</type>
-        <format>0.#####</format>
+        <format>0.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -2200,7 +2233,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>PLACE_NAME_BIAS</name>
         <type>Number</type>
-        <format>0.#####</format>
+        <format>0.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -2212,7 +2245,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>PLACE_ID_BIAS</name>
         <type>Number</type>
-        <format>0.#####</format>
+        <format>0.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -2283,6 +2316,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>StreamLookup</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2318,6 +2352,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2380,6 +2415,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>StreamLookup</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2415,6 +2451,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>ExcelInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2436,7 +2473,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\Resources\NamePatternWeights.xlsx</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;Resources&#x5c;NamePatternWeights.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -2506,6 +2543,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>ExcelInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2527,7 +2565,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\Resources\minedScores.xlsx</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;Resources&#x5c;minedScores.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -2597,6 +2635,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2694,6 +2733,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>Sequence</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2722,6 +2762,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2741,7 +2782,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\GeoData\Merged\MergedGazetteer_SMALL</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;GeoData&#x5c;Merged&#x5c;MergedGazetteer_SMALL</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -2810,7 +2851,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>LATITUDE</name>
         <type>Number</type>
-        <format>0.#####</format>
+        <format>0.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -2822,7 +2863,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>LONGITUDE</name>
         <type>Number</type>
-        <format>0.#####</format>
+        <format>0.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -3002,7 +3043,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>PLACE_NAME_BIAS</name>
         <type>Number</type>
-        <format>0.#####</format>
+        <format>0.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -3014,7 +3055,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>PLACE_ID_BIAS</name>
         <type>Number</type>
-        <format>0.#####</format>
+        <format>0.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -3085,6 +3126,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3181,6 +3223,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>ExcelInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3202,7 +3245,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\Resources\vocab.xlsx</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;Resources&#x5c;vocab.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -3284,6 +3327,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>SplitFieldToRows3</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3309,6 +3353,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>ExcelInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3330,7 +3375,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\Resources\vocab.xlsx</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;Resources&#x5c;vocab.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -3432,6 +3477,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>StreamLookup</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3473,6 +3519,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>ExcelInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3494,7 +3541,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\Resources\wellKnownPlaces.xlsx</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;Resources&#x5c;wellKnownPlaces.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -3648,6 +3695,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>TextFileInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -3680,7 +3728,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <encoding>UTF-8</encoding>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\Resources\wordstats.txt</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;Resources&#x5c;wordstats.txt</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -3695,7 +3743,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>Ngram</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -3709,8 +3757,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>Upper</name>
         <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -3724,8 +3772,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>Lower</name>
         <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -3739,8 +3787,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>Initial</name>
         <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -3754,8 +3802,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>Mixed</name>
         <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -3769,8 +3817,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>Total</name>
         <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
+        <format>&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -3785,7 +3833,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <name>Decision</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -3799,8 +3847,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>CaseConfidence</name>
         <type>Number</type>
-        <format>#.#####</format>
-        <currency>$</currency>
+        <format>&#x23;.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -3850,4 +3898,5 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
    <slave-step-copy-partition-distribution>
 </slave-step-copy-partition-distribution>
    <slave_transformation>N</slave_transformation>
+
 </transformation>
