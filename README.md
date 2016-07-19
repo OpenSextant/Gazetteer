@@ -1,4 +1,6 @@
- 
+##OpenSextant Gazetteer 
+
+
  The OpenSextant Gazetteer is a collection of world-wide place name data. It's used by the other OpenSextant projects, like the OpenSextant geotagger but it is also useful for any project that needs clean, consistent place name data.
 
 ###Released Data
