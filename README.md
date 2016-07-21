@@ -19,8 +19,8 @@ NOTE: Kettle  "5.0.1.A-stable" introduced an intermittent issue reading the Exce
      * set the "NGA_date" and "USGS_date" parameters (see build.properties for details)
      * (optional) modify the "kettle.options.jvm" setting to increase/reduce memory used in gazetteer processing. Setting this below about 1G will cause excessive processing times.  
 * Do the build
-  * run `ant zip`  
-This will fetch the data from the two websites (NGA and USGS) and run the Kettle processes which will clean, transform and output the finished gazetteer data. 
+  * run `ant`  
+This will fetch the data from the two websites (NGA and USGS) and run the Kettle processes which will clean, transform and zip the finished gazetteer data into the build directory. 
   
 
 Depending on your machine this whole process can take up to 1.5 hrs.
