@@ -13,8 +13,9 @@
     <section class="page-header">
       <h1 class="project-name">OpenSextant Gazetteer</h1>
       <h2 class="project-tagline">A geospatial gazetteer for use by the OpenSextant geotagger and also generally useful</h2>
-      <a href="https://github.com/OpenSextant/Gazetteer/releases/latest" class="btn">Latest Released Gazetteer</a>
       <a href="https://github.com/OpenSextant/Gazetteer" class="btn">View on GitHub</a>
+      <a href="https://github.com/OpenSextant/Gazetteer/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/OpenSextant/Gazetteer/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
@@ -28,7 +29,7 @@
 <h3>
 <a id="do-it-yourself" class="anchor" href="#do-it-yourself" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Do it yourself</h3>
 
-<p>OpenSextant use <a href="http://kettle.pentaho.com">Kettle ETL</a> to process and transform the publicly available gazetteer data into the form used by the OpenSextant geotagger. </p>
+<p>OpenSextant use <a href="http://kettle.pentaho.com">Kettle ETL</a> to process and transform the publicly available gazetteer data into a clean consistent form used by the OpenSextant geotagger. </p>
 
 <ul>
 <li>Get and install Kettle
@@ -56,8 +57,8 @@ NOTE: Kettle  "5.0.1.A-stable" introduced an intermittent issue reading the Exce
 <li>Do the build
 
 <ul>
-<li>run ant zip<br>
-This will fetch the data from the two websites (NGA and USGS) and run the Kettle processes which will clean, transform and output the finished gazetteer data. </li>
+<li>run <code>ant</code><br>
+This will fetch the data from the two websites (NGA and USGS) and run the Kettle processes which will clean, transform and zip the finished gazetteer data into the build directory. </li>
 </ul>
 </li>
 </ul>
