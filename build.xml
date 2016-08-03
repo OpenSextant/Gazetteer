@@ -127,6 +127,10 @@
 			<arg value="${kitchen.script.win}" />
 			<arg value="/file" />
 			<arg value="${processGazetteer.script}" />
+			<arg value="/logfile" />
+			<arg value="${basedir}/GazetteerETL/Logs/etl.log.txt" />
+			<arg value="/level" />
+			<arg value="Minimal" />
 		</exec>
 	</target>
 
@@ -138,6 +142,10 @@
 			<env key="PENTAHO_DI_JAVA_OPTIONS" value="${kettle.options.jvm}" />
 			<arg value="-file" />
 			<arg value="${processGazetteer.script}" />
+			<arg value="-logfile" />
+			<arg value="${basedir}/GazetteerETL/Logs/etl.log.txt" />
+			<arg value="-level" />
+			<arg value="Minimal" />
 		</exec>
 	</target>
 
