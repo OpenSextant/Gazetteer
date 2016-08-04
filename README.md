@@ -10,8 +10,10 @@ Most projects will just want the finished data ([Latest Release](https://github.
 OpenSextant use [Kettle ETL](http://kettle.pentaho.com) to process and transform the publicly available gazetteer data into a clean consistent form used by the OpenSextant geotagger. 
 
 * Get and install Kettle
-  * Get it from http://kettle.pentaho.com (Tested with versions "4.4.0-stable" )  
+  * Get it from http://kettle.pentaho.com (Tested with versions "4.4.0-stable" and 6.1 )  
 NOTE: Kettle  "5.0.1.A-stable" introduced an intermittent issue reading the Excel files used for reference data. Avoid for now. Also 6.0.x introduced a bug for the User Defined Java step. Likewise avoid for now.
+Version 6.1 generates a large number of inscrutable but harmless warning messages in the log:
+   *Warning: The configuration parameter [org] is not supported by the default configuration builder for scheme: sftp*
 * Configure
   * copy or rename build.local.properties to build.properties and edit:
      * set the "kettle.home" parameter to where you installed Kettle from step #1 above
