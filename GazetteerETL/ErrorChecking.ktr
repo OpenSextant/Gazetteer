@@ -754,10 +754,9 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <class_name>Processor</class_name>
 
         <class_source><![CDATA[
-import org.opensextant.phonetic.Phoneticizer;
 
+import org.opensextant.utils.PhoneticUtils;
 static double confThresh = 0.9;
-static Phoneticizer phoner = new Phoneticizer();
 
 public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException
 {
@@ -780,9 +779,11 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 	// phoneticize the name
 	String base = "";
 	if(name_type.equals("name")){
-	   base = phoner.phoneticForm(name, algo);
+
+      base = PhoneticUtils.removeCase(PhoneticUtils.foldToASCII(PhoneticUtils.removeDiacritics(PhoneticUtils.removePunctuation(name))));
+	 //  base = phoner.phoneticForm(name, algo);
 	}else{
- 		base = name.toLowerCase().replaceAll("\\.","");
+ 	//	base = name.toLowerCase().replaceAll("\\.","");
 	}
 
 	// prepare base name for tokenization
@@ -2069,7 +2070,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <class_source><![CDATA[
 import java.util.Set;
 import java.util.HashSet;
-import org.opensextant.phonetic.PhoneticUtils;
+import org.opensextant.utils.PhoneticUtils;
 
 public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws KettleException
 {
@@ -2130,6 +2131,13 @@ public static boolean scriptsOK(Set scripts){
 	tmp.remove("KATAKANA");
 
 	if(tmp.size() == 0){ return true;}
+
+	// if any any script with common= OK
+	Set tmp2 = new HashSet(scripts);
+	tmp2.remove("COMMON");
+
+	if(tmp2.size() == 1){ return true;}
+
 	
  	return false;
 }

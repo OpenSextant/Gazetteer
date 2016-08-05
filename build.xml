@@ -61,8 +61,10 @@
 	<!-- copies of required jars, included in lib dir -->
 	<!-- copy these to Kettle's lib dir -->
 	<target name="copy-libs">
-		<copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/opensextant-phonetics.jar" />
-		<copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/commons-codec.jar" />
+		<!--copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/opensextant-phonetics.jar" /-->
+		<copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/opensextant.jar" />
+		<!-- if using a Kettle version < 6.1 uncomment line below to get common codecs -->
+		<!--copy todir="${kettle.home}/lib" file="${basedir}/GazetteerETL/lib/commons-codec.jar" /-->
 	</target>
 
 	<!-- set the proxy needed to fetch the source gazetteer data -->

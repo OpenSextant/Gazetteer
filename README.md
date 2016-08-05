@@ -19,7 +19,8 @@ Version 6.1 generates a large number of inscrutable but harmless warning message
      * set the "kettle.home" parameter to where you installed Kettle from step #1 above
      * set the proxy.host and proxy.port parameters if you are behind a firewall
      * set the "NGA_date" and "USGS_date" parameters (see build.properties for details)
-     * (optional) modify the "kettle.options.jvm" setting to increase/reduce memory used in gazetteer processing. Setting this below about 1G will cause excessive processing times.  
+     * (optional) modify the "kettle.options.jvm" setting to increase/reduce memory used in gazetteer processing. Setting this below about 1G will cause excessive processing times.
+     * if using a Kettle version < 6.1 uncomment line in  *copy-libs* task to use common codecs
 * Do the build
   * run `ant`  
 This will fetch the data from the two websites (NGA and USGS) and run the Kettle processes which will clean, transform and zip the finished gazetteer data into the build directory. 
