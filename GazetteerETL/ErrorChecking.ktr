@@ -6,7 +6,7 @@
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
-    <directory>&#47;</directory>
+    <directory>&#x2f;</directory>
     <parameters>
     </parameters>
     <log>
@@ -16,7 +16,7 @@
 <size_limit_lines/>
 <interval/>
 <timeout_days/>
-<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
 <perf-log-table><connection/>
 <schema/>
 <table/>
@@ -33,6 +33,11 @@
 <table/>
 <timeout_days/>
 <field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
     </log>
     <maxdate>
       <connection/>
@@ -61,17 +66,19 @@
     <clusterschemas>
     </clusterschemas>
   <created_user>-</created_user>
-  <created_date>2014&#47;03&#47;14 08:46:09.269</created_date>
+  <created_date>2014&#x2f;03&#x2f;14 08&#x3a;46&#x3a;09.269</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2014&#47;03&#47;14 08:46:09.269</modified_date>
+  <modified_date>2014&#x2f;03&#x2f;14 08&#x3a;46&#x3a;09.269</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
+    <is_key_private>N</is_key_private>
   </info>
   <notepads>
     <notepad>
-      <note>Data validation and simple conflation (deduping)</note>
+      <note>Data validation and simple conflation &#x28;deduping&#x29;</note>
       <xloc>594</xloc>
       <yloc>383</yloc>
       <width>245</width>
-      <heigth>22</heigth>
+      <heigth>23</heigth>
       <fontname>Microsoft Sans Serif</fontname>
       <fontsize>8</fontsize>
       <fontbold>N</fontbold>
@@ -89,12 +96,32 @@
     </notepad>
   </notepads>
   <order>
-  <hop> <from>Add Error Fields</from><to>Feature Class&#47;Code Check</to><enabled>Y</enabled> </hop>  <hop> <from>Auto Fixer</from><to>Add Error Fields</to><enabled>Y</enabled> </hop>  <hop> <from>Coord Check</from><to>Name Check</to><enabled>Y</enabled> </hop>  <hop> <from>Create Conflate Key</from><to>Dedup</to><enabled>Y</enabled> </hop>  <hop> <from>Create base Name</from><to>Create Conflate Key</to><enabled>Y</enabled> </hop>  <hop> <from>Feature Class&#47;Code Check</from><to>Field Validation</to><enabled>Y</enabled> </hop>  <hop> <from>Feature Code Lookup</from><to>Feature Class&#47;Code Check</to><enabled>Y</enabled> </hop>  <hop> <from>Field Validation</from><to>Coord Check</to><enabled>Y</enabled> </hop>  <hop> <from>Filter Errors</from><to>Error Log</to><enabled>Y</enabled> </hop>  <hop> <from>Name Check</from><to>Script Check</to><enabled>Y</enabled> </hop>  <hop> <from>Script Check</from><to>Filter Errors</to><enabled>Y</enabled> </hop>  <hop> <from>Transformed gazetteer input</from><to>Auto Fixer</to><enabled>Y</enabled> </hop>  <hop> <from>Dedup</from><to>Duplicate Log</to><enabled>Y</enabled> </hop>  <hop> <from>Filter Errors</from><to>Create base Name</to><enabled>Y</enabled> </hop>  <hop> <from>Dedup</from><to>Search Only Check</to><enabled>Y</enabled> </hop>  <hop> <from>Search Only Check</from><to>Clean Output</to><enabled>Y</enabled> </hop>  <hop> <from>FilterSearchOnly</from><to>SearchOnly Log</to><enabled>Y</enabled> </hop>  <hop> <from>Search Only Check</from><to>FilterSearchOnly</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Add Error Fields</from><to>Feature Class&#x2f;Code Check</to><enabled>Y</enabled> </hop>
+  <hop> <from>Auto Fixer</from><to>Add Error Fields</to><enabled>Y</enabled> </hop>
+  <hop> <from>Coord Check</from><to>Name Check</to><enabled>Y</enabled> </hop>
+  <hop> <from>Create base Name</from><to>Create Conflate Key</to><enabled>Y</enabled> </hop>
+  <hop> <from>Feature Class&#x2f;Code Check</from><to>Field Validation</to><enabled>Y</enabled> </hop>
+  <hop> <from>Feature Code Lookup</from><to>Feature Class&#x2f;Code Check</to><enabled>Y</enabled> </hop>
+  <hop> <from>Field Validation</from><to>Coord Check</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter Errors</from><to>Error Log</to><enabled>Y</enabled> </hop>
+  <hop> <from>Name Check</from><to>Script Check</to><enabled>Y</enabled> </hop>
+  <hop> <from>Script Check</from><to>Filter Errors</to><enabled>Y</enabled> </hop>
+  <hop> <from>Transformed gazetteer input</from><to>Auto Fixer</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter Errors</from><to>Create base Name</to><enabled>Y</enabled> </hop>
+  <hop> <from>Search Only Check</from><to>Clean Output</to><enabled>Y</enabled> </hop>
+  <hop> <from>FilterSearchOnly</from><to>SearchOnly Log</to><enabled>Y</enabled> </hop>
+  <hop> <from>Search Only Check</from><to>FilterSearchOnly</to><enabled>Y</enabled> </hop>
+  <hop> <from>Dedupe</from><to>Search Only Check</to><enabled>Y</enabled> </hop>
+  <hop> <from>Dedupe</from><to>Duplicate Log</to><enabled>Y</enabled> </hop>
+  <hop> <from>Create Conflate Key</from><to>Sort by Conflate Key</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort by Conflate Key</from><to>Dedupe</to><enabled>Y</enabled> </hop>
+  </order>
   <step>
     <name>Add Error Fields</name>
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -111,6 +138,7 @@
         <nullif/>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>ErrorDetails</name>
@@ -122,6 +150,7 @@
         <nullif/>
         <length>0</length>
         <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
       </field>
     </fields>
      <cluster_schema/>
@@ -137,6 +166,7 @@
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -234,6 +264,7 @@
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -253,7 +284,7 @@
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\GeoData\Merged\clean</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;GeoData&#x5c;Merged&#x5c;clean</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -310,7 +341,7 @@
       <field>
         <name>LATITUDE</name>
         <type>Number</type>
-        <format>0.#####</format>
+        <format>0.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -322,7 +353,7 @@
       <field>
         <name>LONGITUDE</name>
         <type>Number</type>
-        <format>0.#####</format>
+        <format>0.&#x23;&#x23;&#x23;&#x23;&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -562,8 +593,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1937</xloc>
-      <yloc>257</yloc>
+      <xloc>2032</xloc>
+      <yloc>256</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -573,6 +604,7 @@
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -650,6 +682,7 @@
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -701,10 +734,10 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 	String keyString = name + "-" + cc +"-" + type +"-" + lat +"-" + lon;
 	//String keyString = baseName + "-" + cc +"-" + type +"-" + lat +"-" + lon;
 
-	Long key = ((Integer)keyString.hashCode()).longValue();
+	//Long key = ((Integer)keyString.hashCode()).longValue();
 
  	// Set conflate_key field
-    get(Fields.Out, "CONFLATE_KEY").setValue(r, key);
+    get(Fields.Out, "CONFLATE_KEY").setValue(r, keyString);
 
 
 
@@ -720,7 +753,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
         <field>
         <field_name>CONFLATE_KEY</field_name>
 
-        <field_type>Integer</field_type>
+        <field_type>String</field_type>
 
         <field_length>-1</field_length>
 
@@ -741,6 +774,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -839,32 +873,11 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </step>
 
   <step>
-    <name>Dedup</name>
-    <type>UniqueRowsByHashSet</type>
-    <description/>
-    <distribute>N</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <store_values>N</store_values>
-      <reject_duplicate_row>Y</reject_duplicate_row>
-      <error_description>Duplicate</error_description>
-    <fields>      <field>        <name>CONFLATE_KEY</name>
-        </field>      </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1617</xloc>
-      <yloc>258</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
     <name>Duplicate Log</name>
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -884,7 +897,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}&#47;Logs\duplicates.log</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x2f;Logs&#x5c;duplicates.log</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -941,7 +954,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>LATITUDE</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format>&#x23;.&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -953,7 +966,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>LONGITUDE</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format>&#x23;.&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -1192,7 +1205,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       </field>
       <field>
         <name>CONFLATE_KEY</name>
-        <type>Integer</type>
+        <type>String</type>
         <format/>
         <currency/>
         <decimal/>
@@ -1205,8 +1218,8 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1611</xloc>
-      <yloc>377</yloc>
+      <xloc>1728</xloc>
+      <yloc>384</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1216,6 +1229,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1235,7 +1249,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}&#47;Logs\error.log</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x2f;Logs&#x5c;error.log</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -1292,7 +1306,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>LATITUDE</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format>&#x23;.&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -1304,7 +1318,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
       <field>
         <name>LONGITUDE</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format>&#x23;.&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -1551,10 +1565,11 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     </step>
 
   <step>
-    <name>Feature Class&#47;Code Check</name>
+    <name>Feature Class&#x2f;Code Check</name>
     <type>StreamLookup</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1590,6 +1605,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>ExcelInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1611,7 +1627,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <accept_field/>
     <accept_stepname/>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}&#47;Resources\UniversalGazetterModel.xlsx</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x2f;Resources&#x5c;UniversalGazetterModel.xlsx</name>
       <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
@@ -1717,6 +1733,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1823,6 +1840,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1851,6 +1869,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1862,14 +1881,14 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
 <condition>
  <negated>N</negated>
  <leftvalue>SEARCH_ONLY</leftvalue>
- <function>=</function>
+ <function>&#x3d;</function>
  <rightvalue/>
  <value><name>constant</name><type>String</type><text>T</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
     </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1894</xloc>
-      <yloc>356</yloc>
+      <xloc>1984</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1879,6 +1898,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2055,6 +2075,7 @@ public boolean processRow(StepMetaInterface smi, StepDataInterface sdi) throws K
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2171,6 +2192,7 @@ public static boolean scriptsOK(Set scripts){
     <type>UserDefinedJavaClass</type>
     <description/>
     <distribute>N</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2246,8 +2268,8 @@ public static boolean scriptsOK(Set scripts){
     </fields><clear_result_fields>N</clear_result_fields>
 <info_steps></info_steps><target_steps></target_steps><usage_parameters></usage_parameters>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1791</xloc>
-      <yloc>258</yloc>
+      <xloc>1888</xloc>
+      <yloc>256</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2257,6 +2279,7 @@ public static boolean scriptsOK(Set scripts){
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2276,7 +2299,7 @@ public static boolean scriptsOK(Set scripts){
     <fileNameField/>
     <create_parent_folder>N</create_parent_folder>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}&#47;Logs\SearchOnly.log</name>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x2f;Logs&#x5c;SearchOnly.log</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
@@ -2333,7 +2356,7 @@ public static boolean scriptsOK(Set scripts){
       <field>
         <name>LATITUDE</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format>&#x23;.&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -2345,7 +2368,7 @@ public static boolean scriptsOK(Set scripts){
       <field>
         <name>LONGITUDE</name>
         <type>Number</type>
-        <format>#.#</format>
+        <format>&#x23;.&#x23;</format>
         <currency/>
         <decimal/>
         <group/>
@@ -2573,8 +2596,8 @@ public static boolean scriptsOK(Set scripts){
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1893</xloc>
-      <yloc>460</yloc>
+      <xloc>1984</xloc>
+      <yloc>448</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2584,6 +2607,7 @@ public static boolean scriptsOK(Set scripts){
     <type>TextFileInput</type>
     <description/>
     <distribute>Y</distribute>
+    <custom_distribution/>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -2616,8 +2640,8 @@ public static boolean scriptsOK(Set scripts){
     <encoding>UTF-8</encoding>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>${Internal.Transformation.Filename.Directory}\GeoData\transformed</name>
-      <filemask>.*_xformed.txt</filemask>
+      <name>&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#x5c;GeoData&#x5c;transformed</name>
+      <filemask>.&#x2a;_xformed.txt</filemask>
       <exclude_filemask/>
       <file_required>N</file_required>
       <include_subfolders>N</include_subfolders>
@@ -2631,7 +2655,7 @@ public static boolean scriptsOK(Set scripts){
         <name>PLACE_ID</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2646,7 +2670,7 @@ public static boolean scriptsOK(Set scripts){
         <name>PLACE_NAME</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2661,7 +2685,7 @@ public static boolean scriptsOK(Set scripts){
         <name>PLACE_NAME_EXPANDED</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2675,8 +2699,8 @@ public static boolean scriptsOK(Set scripts){
       <field>
         <name>LATITUDE</name>
         <type>Number</type>
-        <format>#.#</format>
-        <currency>$</currency>
+        <format>&#x23;.&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2690,8 +2714,8 @@ public static boolean scriptsOK(Set scripts){
       <field>
         <name>LONGITUDE</name>
         <type>Number</type>
-        <format>#.#</format>
-        <currency>$</currency>
+        <format>&#x23;.&#x23;</format>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2706,7 +2730,7 @@ public static boolean scriptsOK(Set scripts){
         <name>FEATURE_CLASS</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2721,7 +2745,7 @@ public static boolean scriptsOK(Set scripts){
         <name>FEATURE_CODE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2736,7 +2760,7 @@ public static boolean scriptsOK(Set scripts){
         <name>FIPS_COUNTRY_CODE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2751,7 +2775,7 @@ public static boolean scriptsOK(Set scripts){
         <name>ISO2_COUNTRY_CODE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2766,7 +2790,7 @@ public static boolean scriptsOK(Set scripts){
         <name>ISO3_COUNTRY_CODE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2781,7 +2805,7 @@ public static boolean scriptsOK(Set scripts){
         <name>ADMIN_LEVEL_1</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2796,7 +2820,7 @@ public static boolean scriptsOK(Set scripts){
         <name>ADMIN_LEVEL_2</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2811,7 +2835,7 @@ public static boolean scriptsOK(Set scripts){
         <name>ADMIN_LEVEL_3</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2826,7 +2850,7 @@ public static boolean scriptsOK(Set scripts){
         <name>ADMIN_LEVEL_4</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2841,7 +2865,7 @@ public static boolean scriptsOK(Set scripts){
         <name>ADMIN_LEVEL_5</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2856,7 +2880,7 @@ public static boolean scriptsOK(Set scripts){
         <name>SOURCE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2871,7 +2895,7 @@ public static boolean scriptsOK(Set scripts){
         <name>SOURCE_FEATURE_ID</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2886,7 +2910,7 @@ public static boolean scriptsOK(Set scripts){
         <name>SOURCE_NAME_ID</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2901,7 +2925,7 @@ public static boolean scriptsOK(Set scripts){
         <name>NAME_TYPE</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2916,7 +2940,7 @@ public static boolean scriptsOK(Set scripts){
         <name>NAME_TYPE_SYSTEM</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2931,7 +2955,7 @@ public static boolean scriptsOK(Set scripts){
         <name>SEARCH_ONLY</name>
         <type>String</type>
         <format/>
-        <currency>$</currency>
+        <currency>&#x24;</currency>
         <decimal>.</decimal>
         <group>,</group>
         <nullif>-</nullif>
@@ -2976,9 +3000,68 @@ public static boolean scriptsOK(Set scripts){
       </GUI>
     </step>
 
+  <step>
+    <name>Dedupe</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <count_rows>N</count_rows>
+      <count_field/>
+      <reject_duplicate_row>Y</reject_duplicate_row>
+      <error_description>Duplicate</error_description>
+    <fields>      <field>        <name>CONFLATE_KEY</name>
+        <case_insensitive>N</case_insensitive>
+        </field>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1728</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort by Conflate Key</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>CONFLATE_KEY</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1600</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
   <step_error_handling>
       <error>
-        <source_step>Dedup</source_step>
+        <source_step>Dedupe</source_step>
         <target_step>Duplicate Log</target_step>
         <is_enabled>Y</is_enabled>
         <nr_valuename/>
@@ -2993,4 +3076,5 @@ public static boolean scriptsOK(Set scripts){
    <slave-step-copy-partition-distribution>
 </slave-step-copy-partition-distribution>
    <slave_transformation>N</slave_transformation>
+
 </transformation>
