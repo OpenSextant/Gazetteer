@@ -1,12 +1,12 @@
-##OpenSextant Gazetteer 
+## OpenSextant Gazetteer 
 
 
  The OpenSextant Gazetteer is a collection of world-wide place name data. It's used by the other OpenSextant projects, like the OpenSextant geotagger but it is also useful for any project that needs clean, consistent place name data.
 
-###Released Data
+### Released Data
 Most projects will just want the finished data ([Latest Release](https://github.com/OpenSextant/Gazetteer/releases/latest))
 
-###Do it yourself
+### Do it yourself
 OpenSextant use [Kettle ETL](http://kettle.pentaho.com) to process and transform the publicly available gazetteer data into a clean consistent form used by the OpenSextant geotagger. 
 
 * Get and install Kettle
